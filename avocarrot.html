@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Βασικές φάσεις ανάπτυξης μιας νεοφυούς επιχείρησης (Avocarrot)</title>
+    <style>
+        :root {
+            --primary: #4CAF50;
+            --secondary: #2E7D32;
+            --accent: #FFC107;
+            --bg: #f4f7f6;
+            --text: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 { color: var(--secondary); margin-bottom: 10px; text-align: center; }
+        .subtitle { color: #666; margin-bottom: 30px; }
+
+        .timeline-container {
+            position: relative;
+            max-width: 900px;
+            width: 100%;
+            padding: 20px 0;
+        }
+
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--primary);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            border-radius: 10px;
+        }
+
+        .phase {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+            box-sizing: border-box;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .phase:hover { transform: scale(1.02); }
+
+        .phase::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: white;
+            border: 4px solid var(--accent);
+            top: 20px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .left { left: 0; }
+        .right { left: 50%; }
+        .right::after { left: -10px; }
+
+        .content {
+            padding: 20px;
+            background-color: white;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .details {
+            display: none;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            font-size: 0.95em;
+        }
+
+        .active .details { display: block; }
+        .active .content { border: 2px solid var(--primary); }
+
+        .label { font-weight: bold; color: var(--secondary); display: block; margin-top: 10px; }
+
+        @media screen and (max-width: 600px) {
+            .timeline-container::after { left: 31px; }
+            .phase { width: 100%; padding-left: 70px; padding-right: 25px; }
+            .phase::after { left: 21px; }
+            .right { left: 0%; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Βασικές φάσεις ανάπτυξης μιας νεοφυούς επιχείρησης (Avocarrot)</h1>
+    <p class="subtitle">Κάντε κλικ σε κάθε στάδιο για να δείτε τις λεπτομέρειες</p>
+
+    <div class="timeline-container">
+        
+        <div class="phase left" onclick="this.classList.toggle('active')">
+            <div class="content">
+                <h3>1. Problem discovery (Problem – Solution Fit)</h3>
+                <div class="details">
+                    <span class="label">Χρηματοδότηση:</span> Bootstrapping
+                    <span class="label">Στρατηγικές κινήσεις για επιτάχυνση:</span> Παρατήρηση της αγοράς mobile ads, συζητήσεις με developers
+                    <span class="label">Δομή κόστους:</span> Χρόνος ιδρυτών, μηδενικά λειτουργικά έξοδα
+                    <span class="label">Ροές εσόδων:</span> Καμία
+                </div>
+            </div>
+        </div>
+
+        <div class="phase right" onclick="this.classList.toggle('active')">
+            <div class="content">
+                <h3>2. Solution exploration</h3>
+                <div class="details">
+                    <span class="label">Χρηματοδότηση:</span> Bootstrapping, ενδεχομένως 3F
+                    <span class="label">Στρατηγικές κινήσεις για επιτάχυνση:</span> Ανάπτυξη MVP native advertising, πιλοτικές ενσωματώσεις
+                    <span class="label">Δομή κόστους:</span> Ανάπτυξη λογισμικού, βασικές υποδομές
+                    <span class="label">Ροές εσόδων:</span> Καμία ή συμβολικές
+                </div>
+            </div>
+        </div>
+
+        <div class="phase left" onclick="this.classList.toggle('active')">
+            <div class="content">
+                <h3>3. Product–Market Fit</h3>
+                <div class="details">
+                    <span class="label">Χρηματοδότηση:</span> Angel investors, Seed
+                    <span class="label">Στρατηγικές κινήσεις για επιτάχυνση:</span> Accelerators, διεθνής στόχευση, analytics (έσοδα ανά πελάτη, ενεργοί πελάτες ανά μήνα, retention rate, πρώιμη εικόνα CLV)
+                    <span class="label">Δομή κόστους:</span> Ανάπτυξη προϊόντος, υποστήριξη πελατών
+                    <span class="label">Ροές εσόδων:</span> Revenue share από διαφημίσεις, CPM
+                </div>
+            </div>
+        </div>
+
+        <div class="phase right" onclick="this.classList.toggle('active')">
+            <div class="content">
+                <h3>4. Early Revenue and Operations</h3>
+                <div class="details">
+                    <span class="label">Χρηματοδότηση:</span> Seed extension / Pre-Series A
+                    <span class="label">Στρατηγικές κινήσεις για επιτάχυνση:</span> Δημιουργία onboarding, βελτίωση monetization
+                    <span class="label">Δομή κόστους:</span> Μισθοί πρώτης ομάδας, υποδομές, πωλήσεις
+                    <span class="label">Ροές εσόδων:</span> Σταθερά επαναλαμβανόμενα B2B έσοδα
+                </div>
+            </div>
+        </div>
+
+        <div class="phase left" onclick="this.classList.toggle('active')">
+            <div class="content">
+                <h3>5. Scaling</h3>
+                <div class="details">
+                    <span class="label">Χρηματοδότηση:</span> Venture Capital, Series A
+                    <span class="label">Στρατηγικές κινήσεις για επιτάχυνση:</span> Επέκταση αγορών, ενίσχυση sales και συνεργασιών
+                    <span class="label">Δομή κόστους:</span> Ανθρώπινο δυναμικό, marketing, τεχνολογία κλίμακας
+                    <span class="label">Ροές εσόδων:</span> Αυξανόμενες και προβλέψιμες
+                </div>
+            </div>
+        </div>
+
+        <div class="phase right" onclick="this.classList.toggle('active')">
+            <div class="content">
+                <h3>6. Maturity</h3>
+                <div class="details">
+                    <span class="label">Χρηματοδότηση:</span> Όχι απαραίτητα νέος γύρος
+                    <span class="label">Στρατηγικές κινήσεις για επιτάχυνση:</span> Βελτιστοποίηση κόστους, στρατηγικές συνεργασίες
+                    <span class="label">Δομή κόστους:</span> Σταθερή, έμφαση στα περιθώρια κέρδους, τη βελτιστοποίηση λειτουργιών και την αποδοτικότητα κεφαλαίου
+                    <span class="label">Ροές εσόδων:</span> Σταθερές, ώριμες
+                </div>
+            </div>
+        </div>
+
+        <div class="phase left" onclick="this.classList.toggle('active')">
+            <div class="content">
+                <h3>7. Exit or Transformation</h3>
+                <div class="details">
+                    <span class="label">Χρηματοδότηση:</span> Όχι νέα, ρευστοποίηση μέσω εξαγοράς
+                    <span class="label">Στρατηγικές κινήσεις για επιτάχυνση:</span> Ευθυγράμμιση με στρατηγικό αγοραστή
+                    <span class="label">Δομή κόστους:</span> Δευτερεύουσα σημασία
+                    <span class="label">Ροές εσόδων:</span> Ενσωμάτωση στο μοντέλο του αγοραστή
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
