@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Συγκριτικός Πίνακας - Greek Startups Ecosystem</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: #f1f5f9;
+            padding: 40px 10px;
+            color: #0f172a;
+            margin: 0;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        .table-responsive {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+        th {
+            background-color: #f8fafc;
+            padding: 15px;
+            text-align: left;
+            border-bottom: 2px solid #e2e8f0;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            min-width: 200px;
+        }
+        th.sticky-col {
+            position: sticky;
+            left: 0;
+            background: #f8fafc;
+            z-index: 2;
+            min-width: 150px;
+        }
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #f1f5f9;
+            vertical-align: top;
+            line-height: 1.5;
+        }
+        td.sticky-col {
+            position: sticky;
+            left: 0;
+            background: white;
+            font-weight: bold;
+            color: #2563eb;
+            z-index: 1;
+            border-right: 2px solid #f1f5f9;
+        }
+        .funding-tag {
+            display: inline-block;
+            background: #dcfce7;
+            color: #166534;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .scaling-note {
+            display: block;
+            color: #475569;
+            font-style: italic;
+        }
+        tr:hover td {
+            background-color: #fdfdfd;
+        }
+        /* Startup-specific highlights in headers */
+        .h-avo { border-top: 4px solid #ff6b6b; }
+        .h-beat { border-top: 4px solid #e74c3c; }
+        .h-efood { border-top: 4px solid #ff0000; }
+        .h-flex { border-top: 4px solid #3b82f6; }
+        .h-insta { border-top: 4px solid #27ae60; }
+        .h-blue { border-top: 4px solid #002349; }
+        .h-viva { border-top: 4px solid #00d1ff; }
+        .h-skroutz { border-top: 4px solid #f60; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Συγκριτικός Πίνακας Φάσεων Ανάπτυξης</h1>
+    
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th class="sticky-col">Φάση</th>
+                    <th class="h-avo">Avocarrot</th>
+                    <th class="h-beat">Beat</th>
+                    <th class="h-efood">efood</th>
+                    <th class="h-flex">FlexCar</th>
+                    <th class="h-insta">InstaShop</th>
+                    <th class="h-blue">Blueground</th>
+                    <th class="h-viva">Viva.com</th>
+                    <th class="h-skroutz">Skroutz</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="sticky-col">1. Problem Discovery</td>
+                    <td><span class="funding-tag">Bootstrapping</span> <span class="scaling-note">Παρατήρηση mobile ad market.</span></td>
+                    <td><span class="funding-tag">Bootstrapping</span> <span class="scaling-note">Εντοπισμός χάους στα ταξί της Αθήνας.</span></td>
+                    <td><span class="funding-tag">Bootstrapping</span> <span class="scaling-note">Δυσκολία τηλεφωνικής παραγγελίας.</span></td>
+                    <td><span class="funding-tag">Bootstrapping</span> <span class="scaling-note">Ακαμψία παραδοσιακού leasing.</span></td>
+                    <td><span class="funding-tag">Bootstrapping</span> <span class="scaling-note">Λάθη σε παραγγελίες grocery (Dubai).</span></td>
+                    <td><span class="funding-tag">Bootstrapping</span> <span class="scaling-note">Πρόβλημα διαμονής στελεχών.</span></td>
+                    <td><span class="funding-tag">Bootstrapping</span> <span class="scaling-note">Έλλειψη real-time digital υπηρεσιών.</span></td>
+                    <td><span class="funding-tag">Bootstrapping</span> <span class="scaling-note">Ανάγκη για σύγκριση τιμών tech.</span></td>
+                </tr>
+                <tr>
+                    <td class="sticky-col">2. Solution Exploration</td>
+                    <td><span class="funding-tag">3F</span> <span class="scaling-note">MVP native advertising.</span></td>
+                    <td><span class="funding-tag">Seed (Openfund)</span> <span class="scaling-note">Πρώτη εφαρμογή & εκπαίδευση οδηγών.</span></td>
+                    <td><span class="funding-tag">Angel Funding</span> <span class="scaling-note">Πιλοτικό web portal (Παγκράτι).</span></td>
+                    <td><span class="funding-tag">Pre-seed</span> <span class="scaling-note">Πρώτα 10 αυτοκίνητα προς ενοικίαση.</span></td>
+                    <td><span class="funding-tag">Angel Investment</span> <span class="scaling-note">Εφαρμογή για τη γειτονιά Marina.</span></td>
+                    <td><span class="funding-tag">Angel Funding</span> <span class="scaling-note">Πρώτα 5 διαμερίσματα στην Αθήνα.</span></td>
+                    <td><span class="funding-tag">Internal Funds</span> <span class="scaling-note">VoIP & ticketing (Viva.gr).</span></td>
+                    <td><span class="funding-tag">Bootstrapping</span> <span class="scaling-note">Επέκταση σε όλες τις κατηγορίες.</span></td>
+                </tr>
+                <tr>
+                    <td class="sticky-col">3. Product-Market Fit</td>
+                    <td><span class="funding-tag">Seed</span> <span class="scaling-note">Διεθνή analytics & CLV.</span></td>
+                    <td><span class="funding-tag">Series A</span> <span class="scaling-note">Καθολική υιοθέτηση στην Αθήνα.</span></td>
+                    <td><span class="funding-tag">VC Funding</span> <span class="scaling-note">Mobile app & εξάπλωση επαρχία.</span></td>
+                    <td><span class="funding-tag">Equity Round</span> <span class="scaling-note">Μοντέλο "χωρίς προκαταβολή".</span></td>
+                    <td><span class="funding-tag">Seed (VF)</span> <span class="scaling-note">Επέκταση σε όλο το Dubai.</span></td>
+                    <td><span class="funding-tag">VentureFriends</span> <span class="scaling-note">Επέκταση σε Κων/πολη & Dubai.</span></td>
+                    <td><span class="funding-tag">Institutional</span> <span class="scaling-note">Λήψη άδειας Ιδρύματος Πληρωμών.</span></td>
+                    <td><span class="funding-tag">Strategic</span> <span class="scaling-note">Εξαγορά ποσοστού από DPG.</span></td>
+                </tr>
+                <tr>
+                    <td class="sticky-col">5. Scaling</td>
+                    <td><span class="funding-tag">VC Series A</span> <span class="scaling-note">Επέκταση αγοράς ΗΠΑ.</span></td>
+                    <td><span class="funding-tag">Growth Funding</span> <span class="scaling-note">Επέκταση Λατινική Αμερική.</span></td>
+                    <td><span class="funding-tag">Internal</span> <span class="scaling-note">Υπηρεσία "delivered by efood".</span></td>
+                    <td><span class="funding-tag">Mega Rounds</span> <span class="scaling-note">Είσοδος σε Ιταλία & Μεξικό.</span></td>
+                    <td><span class="funding-tag">Growth</span> <span class="scaling-note">Είσοδος σε Κατάρ, Αίγυπτο, Λίβανο.</span></td>
+                    <td><span class="funding-tag">Series B & C</span> <span class="scaling-note">Είσοδος στην αγορά των ΗΠΑ.</span></td>
+                    <td><span class="funding-tag">Tencent / EBRD</span> <span class="scaling-note">Εξαγορά Praxia (Τραπεζική άδεια).</span></td>
+                    <td><span class="funding-tag">CVC Partners</span> <span class="scaling-note">Μετασχηματισμός σε Marketplace.</span></td>
+                </tr>
+                <tr>
+                    <td class="sticky-col">7. Exit / Transformation</td>
+                    <td><span class="funding-tag">Acquisition</span> <span class="scaling-note">Εξαγορά από Glispa.</span></td>
+                    <td><span class="funding-tag">Acquisition</span> <span class="scaling-note">Εξαγορά από Daimler.</span></td>
+                    <td><span class="funding-tag">Acquisition</span> <span class="scaling-note">Εξαγορά από Delivery Hero.</span></td>
+                    <td><span class="funding-tag">Pre-IPO</span> <span class="scaling-note">Συνεχής ανάπτυξη & εξαγορές.</span></td>
+                    <td><span class="funding-tag">Acquisition</span> <span class="scaling-note">Εξαγορά από Delivery Hero ($360M).</span></td>
+                    <td><span class="funding-tag">Late Stage</span> <span class="scaling-note">Παγκόσμιος ηγέτης (30+ πόλεις).</span></td>
+                    <td><span class="funding-tag">Strategic Deal</span> <span class="scaling-note">Deal με J.P. Morgan (Unicorn).</span></td>
+                    <td><span class="funding-tag">Market Leader</span> <span class="scaling-note">Skroutz Last Mile & Lockers.</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    // Highlight στήλης για καλύτερη ανάγνωση
+    const cells = document.querySelectorAll('td, th');
+    cells.forEach(cell => {
+        cell.addEventListener('mouseover', () => {
+            const colIndex = cell.cellIndex;
+            if (colIndex === 0) return;
+            document.querySelectorAll(`tr td:nth-child(${colIndex + 1}), tr th:nth-child(${colIndex + 1})`)
+                .forEach(c => c.style.backgroundColor = '#f8fafc');
+        });
+        cell.addEventListener('mouseout', () => {
+            const colIndex = cell.cellIndex;
+            document.querySelectorAll(`tr td:nth-child(${colIndex + 1}), tr th:nth-child(${colIndex + 1})`)
+                .forEach(c => c.style.backgroundColor = '');
+        });
+    });
+</script>
+
+</body>
+</html>

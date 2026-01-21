@@ -90,4 +90,71 @@
                 <li><span class="label">Το Πρόβλημα:</span> Ο ιδρυτής (Αλέξανδρος Χατζηελευθερίου), ως σύμβουλος επιχειρήσεων, βίωνε τη δυσκολία του να μένει σε ξενοδοχεία για μήνες.</li>
                 <li><span class="label">Στρατηγική:</span> Ενοικίαση ιδιωτικών διαμερισμάτων, επίπλωση με υψηλά standards και υπεκμίσθωση σε εταιρικά στελέχη.</li>
                 <li><span class="label">Πρώτα Βήματα:</span> Ξεκίνημα με μόλις 5 διαμερίσματα στην Αθήνα.</li>
-                <li>
+                <li><span class="label">Χρηματοδότηση:</span> Ίδια κεφάλαια και αρχική στήριξη από τοπικούς επενδυτές.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">2. Από την Αθήνα στην Κωνσταντινούπολη & Ντουμπάι <span class="year">2015-2016</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Στρατηγική:</span> Επιλογή πόλεων με μεγάλη συγκέντρωση πολυεθνικών εταιρειών.</li>
+                <li><span class="label">Product Evolution:</span> Τυποποίηση της εσωτερικής διακόσμησης (interior design) ώστε κάθε σπίτι Blueground να έχει την ίδια premium αίσθηση.</li>
+                <li><span class="label">Χρηματοδότηση:</span> Πρώτοι σημαντικοί γύροι (VentureFriends κ.α.) που επέτρεψαν την επέκταση εκτός συνόρων.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">3. Η Απόβαση στις ΗΠΑ <span class="year">2017-2019</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Milestone:</span> Είσοδος στη Νέα Υόρκη, τη δυσκολότερη και πιο ανταγωνιστική αγορά real estate στον κόσμο.</li>
+                <li><span class="label">Scaling:</span> Η Blueground γίνεται tech-first εταιρεία, αναπτύσσοντας αλγορίθμους για την επιλογή των καλύτερων ακινήτων και την τιμολόγησή τους.</li>
+                <li><span class="label">Growth:</span> Επέκταση σε Σικάγο, Βοστώνη, Σαν Φρανσίσκο.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">4. Ανθεκτικότητα & Mega-Funding <span class="year">2020-2022</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Πρόκληση:</span> Η πανδημία παγώνει τα ταξίδια. Η Blueground προσαρμόζεται προσφέροντας ευέλικτες λύσεις για το "Work from Anywhere".</li>
+                <li><span class="label">Series C:</span> Άντληση $180 εκατομμυρίων το 2021. Η αποτίμηση πλησιάζει το status του "Unicorn".</li>
+                <li><span class="label">Εξαγορές:</span> Η εταιρεία αρχίζει να εξαγοράζει ανταγωνιστές (π.χ. Tabas στη Βραζιλία, Travelers Haven στις ΗΠΑ).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">5. Παγκόσμια Κυριαρχία <span class="year">Σήμερα</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Network:</span> Παρουσία σε 30+ πόλεις παγκοσμίως με πάνω από 15.000 διαμερίσματα.</li>
+                <li><span class="label">Business Model:</span> Εισαγωγή του "Partner Network", επιτρέποντας σε άλλους ιδιοκτήτες να ενταχθούν στην πλατφόρμα.</li>
+                <li><span class="label">Vision:</span> Στόχος να γίνει η μεγαλύτερη πλατφόρμα για μεσοπρόθεσμη διαμονή στον πλανήτη.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const headers = document.querySelectorAll('.phase-header');
+        
+        headers.forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const isOpen = content.style.display === 'block';
+                
+                document.querySelectorAll('.phase-content').forEach(c => c.style.display = 'none');
+                
+                if (!isOpen) {
+                    content.style.display = 'block';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
