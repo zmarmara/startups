@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexCar - Η Επανάσταση στο Mobility</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #111827;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px 15px;
+            background-color: #f8fafc;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #1e3a8a; /* Deep FlexCar Blue */
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #64748b;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        .phase {
+            border: 1px solid #e2e8f0;
+            margin-bottom: 15px;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        .phase:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+        }
+        .phase-header {
+            background-color: #ffffff;
+            padding: 20px 25px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            font-size: 1.1em;
+            color: #1e293b;
+        }
+        .phase-header .number {
+            color: #3b82f6;
+            margin-right: 10px;
+        }
+        .phase-content {
+            padding: 0 25px 25px 25px;
+            display: none;
+            background-color: #ffffff;
+            border-top: 1px solid #f1f5f9;
+        }
+        .phase-content ul {
+            list-style: none;
+            padding: 20px 0 0 0;
+        }
+        .phase-content li {
+            margin-bottom: 12px;
+            padding-left: 28px;
+            position: relative;
+        }
+        .phase-content li::before {
+            content: "→";
+            color: #3b82f6;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        .label {
+            font-weight: 700;
+            color: #334155;
+            display: block;
+            font-size: 0.9em;
+            margin-bottom: 2px;
+        }
+        .status-badge {
+            font-size: 0.7em;
+            padding: 4px 10px;
+            border-radius: 12px;
+            background: #eff6ff;
+            color: #1d4ed8;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>FlexCar</h1>
+        <p class="subtitle">Από την Αθήνα στην κορυφή του ευρωπαϊκού mobility</p>
+
+        <div class="phase">
+            <div class="phase-header">
+                <span><span class="number">01.</span> Η Ιδέα & Το Πρόβλημα</span>
+                <span class="status-badge">2018</span>
+            </div>
+            <div class="phase-content">
+                <ul>
+                    <li><span class="label">Το Πρόβλημα:</span> Η πολυπλοκότητα του παραδοσιακού leasing (προκαταβολές, δεσμεύσεις 4ετίας, έλεγχοι Τειρεσία).</li>
+                    <li><span class="label">Η Λύση:</span> Μια συνδρομή αυτοκινήτου "όλα σε ένα" χωρίς προκαταβολή, με δυνατότητα επιστροφής ή αγοράς ανά πάσα στιγμή.</li>
+                    <li><span class="label">Ομάδα:</span> Γιώργος Δεσύλλας και Γιώργος Μπιζάς θέτουν τα θεμέλια στην Αθήνα.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="phase">
+            <div class="phase-header">
+                <span><span class="number">02.</span> Proof of Concept & Πρώτοι Επενδυτές</span>
+                <span class="status-badge">2019 - 2020</span>
+            </div>
+            <div class="phase-content">
+                <ul>
+                    <li><span class="label">Traction:</span> Ταχύτατη αποδοχή από το ελληνικό κοινό. Η ευελιξία γίνεται το "κλειδί" για ιδιώτες και επαγγελματίες.</li>
+                    <li><span class="label">Χρηματοδότηση:</span> Πρώτα κεφάλαια από VentureFriends και Uni.Fund.</li>
+                    <li><span class="label">Μοντέλο:</span> Εστίαση στην άριστη εξυπηρέτηση και την ψηφιοποίηση όλης της διαδικασίας (paperless).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="phase">
+            <div class="phase-header">
+                <span><span class="number">03.</span> Hyper-growth & Διεθνές Expansion</span>
+                <span class="status-badge">2021 - 2022</span>
+            </div>
+            <div class="phase-content">
+                <ul>
+                    <li><span class="label">Funding:</span> Άντληση-ρεκόρ κεφαλαίων (πάνω από €200 εκατ.) από κολοσσούς όπως η Seaya Ventures και η Fasanara Capital.</li>
+                    <li><span class="label">Επέκταση:</span> Είσοδος στην αγορά της Κύπρου, της Ιταλίας και του Μεξικού (FlexClub).</li>
+                    <li><span class="label">Στόλος:</span> Χιλιάδες νέα αυτοκίνητα προστίθενται στο στόλο για να καλύψουν την αυξανόμενη ζήτηση.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="phase">
+            <div class="phase-header">
+                <span><span class="number">04.</span> Ωρίμανση & Ηλεκτροκίνηση</span>
+                <span class="status-badge">2023 - Σήμερα</span>
+            </div>
+            <div class="phase-content">
+                <ul>
+                    <li><span class="label">Στρατηγική:</span> Στροφή προς τα ηλεκτρικά οχήματα (EVs) και προώθηση της πράσινης μετακίνησης.</li>
+                    <li><span class="label">Τεχνολογία:</span> Επένδυση σε AI για τη διαχείριση της υπολειμματικής αξίας των οχημάτων και τη βελτιστοποίηση του στόλου.</li>
+                    <li><span class="label">Status:</span> Η FlexCar θεωρείται πλέον ένας από τους μεγαλύτερους εργοδότες στο ελληνικό startup οικοσύστημα (FlexVillage).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const headers = document.querySelectorAll('.phase-header');
+        
+        headers.forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const isOpen = content.style.display === 'block';
+                
+                document.querySelectorAll('.phase-content').forEach(c => c.style.display = 'none');
+                
+                if (!isOpen) {
+                    content.style.display = 'block';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

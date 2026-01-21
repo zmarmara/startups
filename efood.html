@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Βασικές φάσεις ανάπτυξης - efood</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fdfdfd;
+        }
+        h1 {
+            color: #ff0000; /* efood red */
+            text-align: center;
+            border-bottom: 4px solid #ff0000;
+            padding-bottom: 10px;
+            text-transform: lowercase;
+            font-weight: 900;
+        }
+        .instruction {
+            text-align: center;
+            font-style: italic;
+            color: #777;
+            margin-bottom: 30px;
+        }
+        .phase {
+            background: #fff;
+            margin-bottom: 12px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border: 1px solid #eee;
+            overflow: hidden;
+        }
+        .phase-header {
+            background-color: #ff0000;
+            color: white;
+            padding: 18px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .phase-header:hover {
+            background-color: #e60000;
+        }
+        .phase-content {
+            padding: 25px;
+            display: none;
+            background-color: #fff;
+        }
+        .phase-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .phase-content li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        .phase-content li::before {
+            content: "→";
+            color: #ff0000;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .label {
+            font-weight: bold;
+            color: #000;
+            display: block;
+            margin-bottom: 3px;
+        }
+        .badge {
+            background: #fff;
+            color: #ff0000;
+            padding: 2px 8px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>efood</h1>
+    <p class="instruction">Κάντε κλικ σε κάθε στάδιο για να δείτε την πορεία της μεγαλύτερης πλατφόρμας delivery</p>
+
+    <div class="phase">
+        <div class="phase-header">1. Η Ιδέα & το MVP (2011 - 2012) <span class="badge">START</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Χρηματοδότηση:</span> Bootstrapping από την ομάδα των ιδρυτών (αδελφοί Κυρκίνη).</li>
+                <li><span class="label">Στρατηγικές κινήσεις:</span> Δημιουργία μιας απλής πλατφόρμας για online παραγγελία φαγητού, ξεκινώντας με ελάχιστα καταστήματα στην Αθήνα.</li>
+                <li><span class="label">Δομή κόστους:</span> Ανάπτυξη του web portal, πωλήσεις πόρτα-πόρτα σε εστιατόρια για ένταξη στο δίκτυο.</li>
+                <li><span class="label">Ροές εσόδων:</span> Προμήθεια επί των παραγγελιών.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">2. Εκρηκτική Ανάπτυξη & Mobile (2013 - 2014) <span class="badge">GROWTH</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Χρηματοδότηση:</span> Επενδύσεις από Venture Capital (όπως η 701Search).</li>
+                <li><span class="label">Στρατηγικές κινήσεις:</span> Λανσάρισμα της mobile εφαρμογής. Επιθετικό marketing και έμφαση στο user experience (UX) που έκανε την παραγγελία "παιχνίδι".</li>
+                <li><span class="label">Δομή κόστους:</span> Διαφήμιση (TV & Digital), επέκταση σε Θεσσαλονίκη και επαρχία.</li>
+                <li><span class="label">Ροές εσόδων:</span> Αυξανόμενο volume συναλλαγών.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">3. Η Εξαγορά από τη Delivery Hero (2015) <span class="badge">EXIT</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Γεγονός:</span> Η γερμανική Delivery Hero εξαγοράζει το efood, εντάσσοντάς το σε έναν παγκόσμιο κολοσσό.</li>
+                <li><span class="label">Στρατηγικές κινήσεις:</span> Διατήρηση της τοπικής ομάδας διοίκησης. Χρήση της τεχνογνωσίας του ομίλου για βελτιστοποίηση των αλγορίθμων.</li>
+                <li><span class="label">Δομή κόστους:</span> Ενοποίηση τεχνολογικών υποδομών.</li>
+                <li><span class="label">Ροές εσόδων:</span> Η πλατφόρμα γίνεται κυρίαρχη (Market Leader) στην Ελλάδα.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">4. Καθετοποίηση & Delivery Service (2018 - 2020) <span class="badge">SCALE</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Στρατηγικές κινήσεις:</span> Λανσάρισμα του "delivered by efood". Η εταιρεία πλέον δεν στέλνει μόνο την παραγγελία, αλλά διαθέτει δικό της στόλο διανομέων για καταστήματα που δεν είχαν delivery.</li>
+                <li><span class="label">Δομή κόστους:</span> Διαχείριση στόλου, εξοπλισμός διανομέων, logistics software.</li>
+                <li><span class="label">Ροές εσόδων:</span> Επιπλέον χρέωση υπηρεσιών delivery και προνομιακές συνεργασίες με μεγάλες αλυσίδες.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">5. e-Market & Quick Commerce (2021 - Σήμερα) <span class="badge">FUTURE</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Στρατηγικές κινήσεις:</span> Επέκταση στο supermarket (efood market). Παράδοση ειδών παντοπωλείου σε 15-20 λεπτά. Συνεργασία με τον όμιλο Σκλαβενίτη.</li>
+                <li><span class="label">Δομή κόστους:</span> Σκοτεινά καταστήματα (dark stores), αποθήκες και διαχείριση αποθεμάτων.</li>
+                <li><span class="label">Ροές εσόδων:</span> Λιανική πώληση προϊόντων και διαφημιστικά έσοδα από brands (retail media).</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const headers = document.querySelectorAll('.phase-header');
+        
+        headers.forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const isOpen = content.style.display === 'block';
+                
+                // Κλείνουμε τα υπόλοιπα για καθαρή εικόνα
+                document.querySelectorAll('.phase-content').forEach(c => c.style.display = 'none');
+                
+                if (!isOpen) {
+                    content.style.display = 'block';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

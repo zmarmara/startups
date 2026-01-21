@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Βασικές φάσεις ανάπτυξης - Viva.com</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+        h1 {
+            color: #003399;
+            text-align: center;
+            border-bottom: 3px solid #00d1ff;
+            padding-bottom: 10px;
+        }
+        .instruction {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .phase {
+            background: #fff;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+            overflow: hidden;
+        }
+        .phase-header {
+            background-color: #003399;
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+            display: flex;
+            justify-content: space-between;
+        }
+        .phase-header:hover {
+            background-color: #002266;
+        }
+        .phase-content {
+            padding: 20px;
+            display: none;
+            background-color: #fff;
+        }
+        .phase-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .phase-content li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .phase-content li::before {
+            content: "✓";
+            color: #00d1ff;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .label {
+            font-weight: bold;
+            color: #003399;
+            display: block;
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Βασικές φάσεις ανάπτυξης: Viva Wallet / Viva.com</h1>
+    <p class="instruction">Κάντε κλικ σε κάθε στάδιο για να δείτε την εξέλιξη</p>
+
+    <div class="phase">
+        <div class="phase-header">1. Ίδρυση & Real-time Services (2000 - 2010) <span>+</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Χρηματοδότηση:</span> Bootstrapping και ίδια κεφάλαια της Realize (μητρική εταιρεία).</li>
+                <li><span class="label">Στρατηγικές κινήσεις:</span> Ξεκίνημα ως Viva.gr με εστίαση σε VoIP τηλεφωνία, ταξιδιωτικές υπηρεσίες (viva travel) και εισιτήρια θεαμάτων.</li>
+                <li><span class="label">Δομή κόστους:</span> Επένδυση σε in-house λογισμικό και υποδομές cloud.</li>
+                <li><span class="label">Ροές εσόδων:</span> Προμήθειες από πωλήσεις εισιτηρίων και συνδρομές τηλεφωνίας.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">2. Στροφή στο Fintech & Ηλεκτρονικό Χρήμα (2011 - 2014) <span>+</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Χρηματοδότηση:</span> Επανεπένδυση κερδών από τις τουριστικές υπηρεσίες.</li>
+                <li><span class="label">Στρατηγικές κινήσεις:</span> Λήψη άδειας Ιδρύματος Ηλεκτρονικού Χρήματος από την Τράπεζα της Ελλάδος. Δημιουργία του πρώτου e-wallet στην Ελλάδα.</li>
+                <li><span class="label">Δομή κόστους:</span> Συμμόρφωση με το κανονιστικό πλαίσιο (compliance) και ασφάλεια συναλλαγών.</li>
+                <li><span class="label">Ροές εσόδων:</span> Τέλη εκκαθάρισης συναλλαγών και χρεώσεις ηλεκτρονικού πορτοφολιού.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">3. Scaling & Διεθνής Επέκταση (2015 - 2019) <span>+</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Χρηματοδότηση:</span> Είσοδος θεσμικών επενδυτών (Latsis Group, Deca Investments).</li>
+                <li><span class="label">Στρατηγικές κινήσεις:</span> Επέκταση σε 23 ευρωπαϊκές χώρες. Εστίαση στο "Cloud POS" και την τεχνολογία Tap-on-Phone (μετατροπή κινητού σε POS).</li>
+                <li><span class="label">Δομή κόστους:</span> Marketing σε ευρωπαϊκό επίπεδο, ίδρυση τοπικών υποκαταστημάτων.</li>
+                <li><span class="label">Ροές εσόδων:</span> Transaction fees από εμπόρους (B2B) σε όλη την Ευρώπη.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">4. Η Τραπεζική Άδεια (2020 - 2021) <span>+</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Χρηματοδότηση:</span> Προσέλκυση κεφαλαίων από Tencent και EBRD.</li>
+                <li><span class="label">Στρατηγικές κινήσεις:</span> Εξαγορά της Praxia Bank για την απόκτηση τραπεζικής άδειας. Η Viva γίνεται "Neobank".</li>
+                <li><span class="label">Δομή κόστους:</span> Κεφαλαιακή επάρκεια για τραπεζικές εργασίες, ανάπτυξη δανειακών προϊόντων.</li>
+                <li><span class="label">Ροές εσόδων:</span> Τραπεζικές υπηρεσίες, επιτόκια και σύνθετα χρηματοοικονομικά προϊόντα.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">5. Unicorn Status & J.P. Morgan (2022 - Σήμερα) <span>+</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Γεγονός:</span> Η J.P. Morgan αποκτά το 48,5% της Viva Wallet σε ένα deal που αποτιμά την εταιρεία πάνω από $2 δισ.</li>
+                <li><span class="label">Στρατηγικές κινήσεις:</span> Rebranding σε **Viva.com**. Ενοποίηση με τα παγκόσμια δίκτυα πληρωμών.</li>
+                <li><span class="label">Δομή κόστους:</span> Παγκόσμια κλιμάκωση (global scaling) και R&D για νέες τεχνολογίες πληρωμών.</li>
+                <li><span class="label">Ροές εσόδων:</span> Μεγάλης κλίμακας επεξεργασία πληρωμών για πολυεθνικούς πελάτες.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const headers = document.querySelectorAll('.phase-header');
+        
+        headers.forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const isOpen = content.style.display === 'block';
+                
+                // Κλείνουμε τα υπόλοιπα για καλύτερη εμπειρία
+                document.querySelectorAll('.phase-content').forEach(c => c.style.display = 'none');
+                document.querySelectorAll('.phase-header span').forEach(s => s.innerText = '+');
+                
+                if (!isOpen) {
+                    content.style.display = 'block';
+                    header.querySelector('span').innerText = '-';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

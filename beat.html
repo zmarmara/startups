@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Βασικές φάσεις ανάπτυξης - Beat (Taxibeat)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+        }
+        .instruction {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .phase {
+            background: #fff;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .phase-header {
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .phase-header:hover {
+            background-color: #c0392b;
+        }
+        .phase-content {
+            padding: 20px;
+            display: none;
+            background-color: #fff;
+        }
+        .phase-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .phase-content li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .phase-content li::before {
+            content: "•";
+            color: #e74c3c;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .label {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Βασικές φάσεις ανάπτυξης: Beat (Taxibeat)</h1>
+    <p class="instruction">Κάντε κλικ σε κάθε στάδιο για να δείτε τις λεπτομέρειες</p>
+
+    <div class="phase">
+        <div class="phase-header">1. Problem discovery (2011)</div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Χρηματοδότηση:</span> Bootstrapping (ίδια κεφάλαια των ιδρυτών).</li>
+                <li><span class="label">Στρατηγικές κινήσεις:</span> Εντοπισμός προβλήματος στην εύρεση ταξί στην Αθήνα και την έλλειψη αξιοπιστίας/διαφάνειας στις υπηρεσίες.</li>
+                <li><span class="label">Δομή κόστους:</span> Προσωπικός χρόνος ιδρυτών, ανάπτυξη της πρώτης έκδοσης της εφαρμογής (MVP).</li>
+                <li><span class="label">Ροές εσόδων:</span> Μηδενικές.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">2. Solution exploration & Launch</div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Χρηματοδότηση:</span> Πρώτος γύρος (Seed) από την Openfund (~€40.000).</li>
+                <li><span class="label">Στρατηγικές κινήσεις:</span> Λανσάρισμα του Taxibeat στην Αθήνα. Εκπαίδευση των οδηγών στη χρήση smartphone και δημιουργία κοινότητας αξιολογημένων οδηγών.</li>
+                <li><span class="label">Δομή κόστους:</span> Marketing για προσέλκυση χρηστών, λειτουργικά έξοδα γραφείου.</li>
+                <li><span class="label">Ροές εσόδων:</span> Προμήθεια ανά επιτυχημένη διαδρομή (αρχικά πειραματικά).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">3. Product–Market Fit & Early Traction</div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Χρηματοδότηση:</span> Πρόσθετοι γύροι από επενδυτές (συνολικά περίπου $7M μέχρι το 2014).</li>
+                <li><span class="label">Στρατηγικές κινήσεις:</span> Ραγδαία υιοθέτηση από το κοινό της Αθήνας. Εξάπλωση σε άλλες ελληνικές πόλεις και πρώτη προσπάθεια εξόδου στο εξωτερικό (Βραζιλία, Περού).</li>
+                <li><span class="label">Δομή κόστους:</span> Μεγέθυνση ομάδας προγραμματιστών, customer support.</li>
+                <li><span class="label">Ροές εσόδων:</span> Σταθερή προμήθεια από χιλιάδες καθημερινές κλήσεις ταξί.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">4. Scaling & Pivot to LATAM</div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Χρηματοδότηση:</span> Οργανική ανάπτυξη και επανεπένδυση εσόδων.</li>
+                <li><span class="label">Στρατηγικές κινήσεις:</span> Εστίαση στη Λατινική Αμερική (Λίμα, Περού) όπου η ζήτηση εκτοξεύθηκε. Η εταιρεία μετονομάζεται από Taxibeat σε Beat.</li>
+                <li><span class="label">Δομή κόστους:</span> Διεθνές marketing, τοπικές ομάδες επιχειρήσεων (Ops) στις νέες χώρες.</li>
+                <li><span class="label">Ροές εσόδων:</span> Η αγορά του Περού γίνεται η κύρια πηγή εσόδων, ξεπερνώντας την Ελλάδα.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">5. Exit (2017)</div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Γεγονός:</span> Εξαγορά από τη MyTaxi (θυγατρική της Daimler/Mercedes-Benz) για ποσό άνω των €40 εκατ.</li>
+                <li><span class="label">Στρατηγικές κινήσεις:</span> Ενσωμάτωση στον όμιλο FREE NOW. Η Beat διατηρεί την αυτονομία της για να κυριαρχήσει στη Λατινική Αμερική (Χιλή, Κολομβία, Μεξικό).</li>
+                <li><span class="label">Δομή κόστους:</span> Ενοποίηση συστημάτων, τεράστιες επενδύσεις σε στόλους και ασφάλεια.</li>
+                <li><span class="label">Ροές εσόδων:</span> Δισεκατομμύρια δολάρια σε ακαθάριστη αξία διαδρομών (GMV).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">6. Maturity & Transformation (2022+)</div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Κατάσταση:</span> Η Beat γίνεται ένας από τους μεγαλύτερους παίκτες ride-hailing παγκοσμίως.</li>
+                <li><span class="label">Στρατηγικές κινήσεις:</span> Εστίαση σε ηλεκτρικά οχήματα (Beat Tesla). Στα τέλη του 2022, η εταιρεία αποφασίζει να αποσυρθεί από τη Λατινική Αμερική για να επικεντρωθεί ο μητρικός όμιλος στην Ευρώπη.</li>
+                <li><span class="label">Δομή κόστους:</span> Βελτιστοποίηση κερδοφορίας και τελική απορρόφηση/μετασχηματισμός υπηρεσιών.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Λειτουργικότητα για το άνοιγμα/κλείσιμο των φάσεων
+        const headers = document.querySelectorAll('.phase-header');
+        
+        headers.forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const isOpen = content.style.display === 'block';
+                
+                // Κλείσιμο όλων των άλλων (προαιρετικό, αν θέλετε μόνο ένα ανοιχτό)
+                // document.querySelectorAll('.phase-content').forEach(c => c.style.display = 'none');
+                
+                content.style.display = isOpen ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>

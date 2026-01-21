@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skroutz - Το Case Study του Ελληνικού E-commerce</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .main-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #f60; /* Skroutz Orange */
+            text-align: center;
+            font-size: 2.8em;
+            margin-bottom: 5px;
+            font-weight: 800;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        .phase {
+            background: #fff;
+            margin-bottom: 15px;
+            border: 2px solid #eee;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .phase:hover {
+            border-color: #f60;
+        }
+        .phase-header {
+            padding: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+        }
+        .phase-content {
+            padding: 0 25px 25px 25px;
+            display: none;
+            border-top: 1px solid #eee;
+        }
+        .phase-content ul {
+            list-style: none;
+            padding: 20px 0 0 0;
+        }
+        .phase-content li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .phase-content li::before {
+            content: "◆";
+            color: #f60;
+            position: absolute;
+            left: 0;
+            font-size: 0.8em;
+        }
+        .label {
+            font-weight: 700;
+            color: #222;
+            display: block;
+            margin-bottom: 2px;
+        }
+        .year-pill {
+            background: #fff1e6;
+            color: #f60;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-card">
+        <h1>Skroutz</h1>
+        <p class="subtitle">Η διαδρομή από μια μηχανή σύγκρισης τιμών στο "Amazon της Ελλάδας"</p>
+
+        <div class="phase">
+            <div class="phase-header">1. Το "Hobby" που έγινε Startup <span class="year-pill">2005 - 2008</span></div>
+            <div class="phase-content">
+                <ul>
+                    <li><span class="label">Η Αρχή:</span> Ο Γιώργος Χατζηγεωργίου, ο Γιώργος Αυγουστίδης και ο Βασίλης Δήμος δημιουργούν μια μηχανή σύγκρισης τιμών για τεχνολογικά προϊόντα.</li>
+                    <li><span class="label">Στόχος:</span> Η διαφάνεια στην αγορά και η εύρεση της χαμηλότερης τιμής.</li>
+                    <li><span class="label">Status:</span> Bootstrapping. Η ομάδα δουλεύει σε κανονικές δουλειές το πρωί και αναπτύσσει το Skroutz τα βράδια.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="phase">
+            <div class="phase-header">2. Επαγγελματοποίηση & Ανάπτυξη <span class="year-pill">2009 - 2012</span></div>
+            <div class="phase-content">
+                <ul>
+                    <li><span class="label">Στρατηγική:</span> Επέκταση σε όλες τις κατηγορίες προϊόντων (ρούχα, σπίτι, φάρμακα).</li>
+                    <li><span class="label">Επένδυση:</span> Συνεργασία με την DPG (όμιλος Γιαννακόπουλου) η οποία απέκτησε ποσοστό, βοηθώντας στην εμπορική ανάπτυξη.</li>
+                    <li><span class="label">Κουλτούρα:</span> Δημιουργία των πρώτων μεγάλων γραφείων και εστίαση στην εμπειρία του χρήστη και το περιεχόμενο (φωτογραφίες, reviews).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="phase">
+            <div class="phase-header">3. Η Ανεξαρτητοποίηση & Το CVC <span class="year-pill">2013 - 2020</span></div>
+            <div class="phase-content">
+                <ul>
+                    <li><span class="label">Milestone:</span> Οι ιδρυτές εξαγοράζουν πίσω το ποσοστό της DPG, ανακτώντας τον πλήρη έλεγχο.</li>
+                    <li><span class="label">Επένδυση:</span> Το αμερικανικό fund **CVC Capital Partners** αποκτά μειοψηφικό ποσοστό (περίπου 45%), δίνοντας τεράστια ώθηση και κεφάλαια.</li>
+                    <li><span class="label">Pandemic Boom:</span> Η πανδημία εκτοξεύει τις online αγορές και το Skroutz γίνεται η κύρια πύλη αγορών για τους Έλληνες.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="phase">
+            <div class="phase-header">4. Το Μεγάλο Pivot: Marketplace <span class="year-pill">2021 - 2023</span></div>
+            <div class="phase-content">
+                <ul>
+                    <li><span class="label">Μετασχηματισμός:</span> Από "οδηγός τιμών" γίνεται **Marketplace**. Ο χρήστης αγοράζει απευθείας από το Skroutz ("Έξυπνο Καλάθι").</li>
+                    <li><span class="label">Logistics:</span> Εξαγορά της SendX και δημιουργία της **Skroutz Last Mile**. Εμφάνιση των "Skroutz Point" (lockers) σε όλη την Ελλάδα.</li>
+                    <li><span class="label">Fintech:</span> Λανσάρισμα υπηρεσιών όπως το "Δόσεις για όλους" (BNPL), προσφέροντας χρηματοδότηση χωρίς πιστωτική κάρτα.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="phase">
+            <div class="phase-header">5. Το Οικοσύστημα του Μέλλοντος <span class="year-pill">Σήμερα</span></div>
+            <div class="phase-content">
+                <ul>
+                    <li><span class="label">Στρατηγική:</span> Στροφή στις συνδρομητικές υπηρεσίες με το **Skroutz Plus**.</li>
+                    <li><span class="label">Διεθνές Βήμα:</span> Είσοδος στην αγορά της Κύπρου και σταδιακή προετοιμασία για περαιτέρω εξωστρέφεια.</li>
+                    <li><span class="label">Vision:</span> Η μετατροπή σε ένα "Super App" που καλύπτει κάθε ανάγκη του καταναλωτή.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const headers = document.querySelectorAll('.phase-header');
+        
+        headers.forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const isOpen = content.style.display === 'block';
+                
+                document.querySelectorAll('.phase-content').forEach(c => c.style.display = 'none');
+                
+                if (!isOpen) {
+                    content.style.display = 'block';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
