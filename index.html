@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greek Startups Success Stories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --primary-text: #1e293b;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--primary-text);
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+        p.subtitle {
+            font-size: 1.2rem;
+            color: #64748b;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .card h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #64748b;
+            margin: 10px 0 20px 0;
+        }
+        .view-link {
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+        }
+        .view-link::after {
+            content: '→';
+            margin-left: 8px;
+            transition: margin 0.2s;
+        }
+        .card:hover .view-link::after {
+            margin-left: 12px;
+        }
+
+        /* Startup Colors & Themes */
+        .avocarrot { border-bottom: 6px solid #ff6b6b; }
+        .beat { border-bottom: 6px solid #e74c3c; }
+        .blueground { border-bottom: 6px solid #002349; }
+        .efood { border-bottom: 6px solid #ff0000; }
+        .flexcar { border-bottom: 6px solid #3b82f6; }
+        .instashop { border-bottom: 6px solid #27ae60; }
+        .skroutz { border-bottom: 6px solid #f60; }
+        .viva { border-bottom: 6px solid #00d1ff; }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Greek Startup Ecosystem</h1>
+            <p class="subtitle">Ανακαλύψτε τις φάσεις ανάπτυξης των σημαντικότερων ελληνικών startups</p>
+        </header>
+
+        <main class="grid">
+            <a href="skroutz.html" class="card skroutz">
+                <div>
+                    <h2>Skroutz</h2>
+                    <p>Η εξέλιξη της μεγαλύτερης πλατφόρμας ηλεκτρονικού εμπορίου στην Ελλάδα.</p>
+                </div>
+                <span class="view-link">Προβολή Φάσεων</span>
+            </a>
+
+            <a href="viva.html" class="card viva">
+                <div>
+                    <h2>Viva.com</h2>
+                    <p>Η πορεία προς το Unicorn status και η στρατηγική συνεργασία με την J.P. Morgan.</p>
+                </div>
+                <span class="view-link">Προβολή Φάσεων</span>
+            </a>
+
+            <a href="beat.html" class="card beat">
+                <div>
+                    <h2>Beat</h2>
+                    <p>Από την Αθήνα στη Λατινική Αμερική και την εξαγορά από την Daimler.</p>
+                </div>
+                <span class="view-link">Προβολή Φάσεων</span>
+            </a>
+
+            <a href="efood.html" class="card efood">
+                <div>
+                    <h2>efood</h2>
+                    <p>Η κυριαρχία στο online delivery και η ένταξη στη Delivery Hero.</p>
+                </div>
+                <span class="view-link">Προβολή Φάσεων</span>
+            </a>
+
+            <a href="blueground.html" class="card blueground">
+                <div>
+                    <h2>Blueground</h2>
+                    <p>Scaling σε παγκόσμιο επίπεδο στον τομέα του premium hospitality.</p>
+                </div>
+                <span class="view-link">Προβολή Φάσεων</span>
+            </a>
+
+            <a href="instashop.html" class="card instashop">
+                <div>
+                    <h2>InstaShop</h2>
+                    <p>Το success story του grocery delivery στη Μέση Ανατολή.</p>
+                </div>
+                <span class="view-link">Προβολή Φάσεων</span>
+            </a>
+
+            <a href="flexcar.html" class="card flexcar">
+                <div>
+                    <h2>FlexCar</h2>
+                    <p>Η επανάσταση στο μοντέλο κατοχής και χρήσης αυτοκινήτου.</p>
+                </div>
+                <span class="view-link">Προβολή Φάσεων</span>
+            </a>
+
+            <a href="avocarrot.html" class="card avocarrot">
+                <div>
+                    <h2>Avocarrot</h2>
+                    <p>Ένα κλασικό παράδειγμα επιτυχημένου Ad-Tech exit.</p>
+                </div>
+                <span class="view-link">Προβολή Φάσεων</span>
+            </a>
+        </main>
+    </div>
+
+</body>
+</html>
