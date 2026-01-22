@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growth Phases - Touchlab</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        h1 {
+            color: #1a365d;
+            text-align: center;
+            border-bottom: 2px solid #ed8936;
+            padding-bottom: 20px;
+            font-weight: 800;
+        }
+        .instruction {
+            text-align: center;
+            font-style: italic;
+            color: #718096;
+            margin-bottom: 30px;
+        }
+        .phase {
+            background: #f7fafc;
+            margin-bottom: 12px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .phase:hover {
+            transform: scale(1.01);
+        }
+        .phase-header {
+            background-color: #1a365d;
+            color: #fff;
+            padding: 18px;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+        }
+        .phase-content {
+            padding: 25px;
+            display: none;
+            background-color: #fff;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+        li::before {
+            content: "•";
+            color: #ed8936;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .label {
+            font-weight: bold;
+            color: #2c5282;
+            display: block;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Touchlab: Tactile AI Roadmap</h1>
+    <p class="instruction">Click on each stage to see how "e-skin" technology scales</p>
+
+    <div class="phase">
+        <div class="phase-header">1. Problem Discovery (University Origins) <span>+</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Funding</span> Academic grants and University of Edinburgh research support.</li>
+                <li><span class="label">Strategic Moves</span> Identifying that while robots have "vision" and "hearing," they lack a human-like sense of "touch," which limits their ability to handle fragile objects.</li>
+                <li><span class="label">Cost Structure</span> Research personnel and laboratory equipment.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">2. Solution Exploration <span>+</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Funding</span> Pre-seed funding and innovation competitions.</li>
+                <li><span class="label">Strategic Moves</span> Developing the first "electronic skin" (e-skin) prototype that is thinner than human skin but can withstand extreme temperatures and pressures.</li>
+                <li><span class="label">Revenue Streams</span> Grant-funded pilot projects and university partnerships.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">3. Product–Market Fit <span>+</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Funding</span> Early Venture Capital and Angel investors.</li>
+                <li><span class="label">Strategic Moves</span> Pivoting from general robotics to specific high-value sectors like healthcare (tele-operated surgery) and nuclear decommissioning where haptic feedback is critical.</li>
+                <li><span class="label">Cost Structure</span> Engineering talent and initial patent filings.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">4. Early Operations & Pilot Testing <span>+</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Funding</span> Seed Round.</li>
+                <li><span class="label">Strategic Moves</span> Deploying "Telerobot" pilots where doctors can "feel" patients from miles away. Testing the durability of sensors in industrial environments.</li>
+                <li><span class="label">Revenue Streams</span> Paid pilot programs and Proof of Concepts (PoCs).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">5. Scaling (Current Phase) <span>+</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Funding</span> Series A.</li>
+                <li><span class="label">Strategic Moves</span> Integrating tactile sensors into standard industrial robotic arms (Universal Robots, KUKA). Scaling manufacturing of the e-skin material.</li>
+                <li><span class="label">Cost Structure</span> Sales & Marketing, large-scale manufacturing facilities, and AI data training for touch patterns.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">6. Maturity & Transformation <span>+</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Strategic Moves</span> Becoming the global standard for robotic "skin." Moving into consumer robotics and smart prosthetics.</li>
+                <li><span class="label">Revenue Streams</span> Licensing the technology to major robot manufacturers and subscription-based "Haptics-as-a-Service."</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const headers = document.querySelectorAll('.phase-header');
+        headers.forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const isOpen = content.style.display === 'block';
+                content.style.display = isOpen ? 'none' : 'block';
+                header.querySelector('span').innerText = isOpen ? '+' : '-';
+            });
+        });
+    </script>
+
+</body>
+</html>

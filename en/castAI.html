@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growth Phases - CAST AI</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #1a202c;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        h1 {
+            color: #0061ff; /* CAST AI Blue */
+            text-align: center;
+            border-bottom: 2px solid #0061ff;
+            padding-bottom: 20px;
+            font-weight: 800;
+        }
+        .instruction {
+            text-align: center;
+            font-style: italic;
+            color: #718096;
+            margin-bottom: 30px;
+        }
+        .phase {
+            background: #f8fafc;
+            margin-bottom: 12px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .phase:hover {
+            border-color: #0061ff;
+            box-shadow: 0 4px 12px rgba(0, 97, 255, 0.1);
+        }
+        .phase-header {
+            background-color: #001d3d;
+            color: #fff;
+            padding: 18px;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+        }
+        .phase-content {
+            padding: 25px;
+            display: none;
+            background-color: #fff;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+        li::before {
+            content: "⚡";
+            position: absolute;
+            left: 0;
+            font-size: 0.9rem;
+        }
+        .label {
+            font-weight: bold;
+            color: #0061ff;
+            display: block;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CAST AI: Cloud Optimization Roadmap</h1>
+    <p class="instruction">Click on each stage to see the evolution of automated FinOps</p>
+
+    <div class="phase">
+        <div class="phase-header">1. Problem Discovery (2019) <span>+</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Funding</span> Seed capital from founders (serial entrepreneurs Yuri Frayman, Leon Kuperman, and Laurent Gil).</li>
+                <li><span class="label">Strategic Moves</span> Identifying that Kubernetes management is too complex for humans to optimize manually, leading to massive "cloud waste" (over-provisioning).</li>
+                <li><span class="label">Goal</span> Solving the multi-cloud complexity and automated cost reduction for containerized applications.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">2. Solution Exploration <span>+</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Funding</span> Strategic Seed investment.</li>
+                <li><span class="label">Strategic Moves</span> Developing an AI engine that can analyze Kubernetes clusters and suggest (initially) and then execute (automatically) the most cost-efficient instance types in real-time.</li>
+                <li><span class="label">MVP</span> A "Free Savings Report" tool that allowed DevOps teams to see exactly how much they could save before even installing the platform.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">3. Product–Market Fit (2020-2021) <span>+</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Funding</span> $10M Series A led by WestCap.</li>
+                <li><span class="label">Strategic Moves</span> Transitioning from simple reporting to "Autonomous Optimization." Integration with AWS, GCP, and Azure.</li>
+                <li><span class="label">Traction</span> Rapid adoption by high-growth startups and digital-native companies where cloud costs were spiraling out of control.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">4. Scaling & Operational Excellence <span>+</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Funding</span> $20M Series B (2023) led by Creandum.</li>
+                <li><span class="label">Strategic Moves</span> Expanding the product line to include automated security and disaster recovery. Launching "Spot Instance" automation, allowing companies to use the cheapest cloud resources with 100% reliability.</li>
+                <li><span class="label">Revenue Streams</span> Tiered SaaS pricing based on a percentage of savings or a flat fee per node.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="phase">
+        <div class="phase-header">5. Hyper-Growth (2024-Present) <span>+</span></div>
+        <div class="phase-content">
+            <ul>
+                <li><span class="label">Funding</span> $35M investment from Vintage Investment Partners and existing backers.</li>
+                <li><span class="label">Strategic Moves</span> Targeting Enterprise-level clients. Shifting the narrative from just "saving money" to "enabling AI scaling" (optimizing expensive GPU clusters for AI training).</li>
+                <li><span class="label">Market Impact</span> CAST AI now manages clusters for global leaders, often reducing their infrastructure spend by over 60% automatically.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const headers = document.querySelectorAll('.phase-header');
+        headers.forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const isOpen = content.style.display === 'block';
+                content.style.display = isOpen ? 'none' : 'block';
+                header.querySelector('span').innerText = isOpen ? '+' : '-';
+            });
+        });
+    </script>
+
+</body>
+</html>

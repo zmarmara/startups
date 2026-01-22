@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Startup Watch - Innovation Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --card-bg: #111111;
+            --accent: #3b82f6;
+            --text-main: #ffffff;
+            --text-dim: #a1a1aa;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 60px 20px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            letter-spacing: -2px;
+            margin: 0 0 15px 0;
+            background: linear-gradient(to right, #fff, #666);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-dim);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid #222;
+            border-radius: 24px;
+            padding: 40px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+        }
+        .card h2 {
+            font-size: 1.8rem;
+            margin: 0 0 12px 0;
+            font-weight: 700;
+        }
+        .card p {
+            color: var(--text-dim);
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-size: 1rem;
+        }
+        .badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        /* Sector Colors */
+        .ai { background: rgba(59, 130, 246, 0.1); color: #3b82f6; }
+        .robotics { background: rgba(168, 85, 247, 0.1); color: #a855f7; }
+        .security { background: rgba(244, 63, 94, 0.1); color: #f43f5e; }
+        .health { background: rgba(16, 185, 129, 0.1); color: #10b981; }
+
+        .btn-text {
+            font-weight: 700;
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+        }
+        .btn-text::after {
+            content: '→';
+            margin-left: 10px;
+            transition: margin 0.3s;
+        }
+        .card:hover .btn-text::after {
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Global Innovation</h1>
+            <p class="subtitle">Exploring the growth trajectories of the world's most disruptive startups in AI, Robotics, and Deep Tech.</p>
+        </header>
+
+        <main class="grid">
+            <a href="figureAI.html" class="card">
+                <span class="badge robotics">Robotics</span>
+                <div>
+                    <h2>Figure AI</h2>
+                    <p>Building the world's first commercially viable general-purpose humanoid robot.</p>
+                </div>
+                <span class="btn-text">View Roadmap</span>
+            </a>
+
+            <a href="castAI.html" class="card">
+                <span class="badge ai">Cloud AI</span>
+                <div>
+                    <h2>CAST AI</h2>
+                    <p>Autonomous Kubernetes optimization platform reducing cloud waste by up to 75%.</p>
+                </div>
+                <span class="btn-text">View Roadmap</span>
+            </a>
+
+            <a href="parloa.html" class="card">
+                <span class="badge ai">Conversational AI</span>
+                <div>
+                    <h2>Parloa</h2>
+                    <p>Revolutionizing enterprise customer service with human-like AI voice automation.</p>
+                </div>
+                <span class="btn-text">View Roadmap</span>
+            </a>
+
+            <a href="aikido.html" class="card">
+                <span class="badge security">Cybersecurity</span>
+                <div>
+                    <h2>Aikido</h2>
+                    <p>DevSecOps platform simplifying security for developers by cutting through the noise.</p>
+                </div>
+                <span class="btn-text">View Roadmap</span>
+            </a>
+
+            <a href="touchlab.html" class="card">
+                <span class="badge robotics">Haptics</span>
+                <div>
+                    <h2>Touchlab</h2>
+                    <p>Developing electronic "sensing skin" to give robots a human-like sense of touch.</p>
+                </div>
+                <span class="btn-text">View Roadmap</span>
+            </a>
+
+            <a href="aheadhealth.html" class="card">
+                <span class="badge health">Telehealth</span>
+                <div>
+                    <h2>Ahead Health</h2>
+                    <p>The rise of digital-first mental health care and modern ADHD management.</p>
+                </div>
+                <span class="btn-text">View Roadmap</span>
+            </a>
+        </main>
+    </div>
+
+</body>
+</html>
