@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Growth Radar | Global Startup Hub</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <title>Greek Startups Hub - Επιτυχίες & Ανάπτυξη</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg: #0a0a0a;
-            --card-bg: #111111;
-            --accent: #3b82f6;
-            --text-main: #ffffff;
-            --text-dim: #a1a1aa;
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
         }
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--bg);
-            color: var(--text-main);
+            color: var(--text);
             margin: 0;
-            padding: 60px 20px;
+            padding: 40px 20px;
         }
         .container {
             max-width: 1100px;
@@ -26,171 +25,201 @@
         }
         header {
             text-align: center;
-            margin-bottom: 70px;
+            margin-bottom: 50px;
         }
         h1 {
-            font-size: 3.5rem;
-            font-weight: 900;
-            letter-spacing: -2px;
-            margin: 0 0 15px 0;
-            background: linear-gradient(to right, #fff, #666);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+            color: #0f172a;
         }
         .subtitle {
             font-size: 1.1rem;
-            color: var(--text-dim);
-            max-width: 700px;
-            margin: 0 auto 40px;
-            line-height: 1.6;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto 30px;
         }
-        
-        /* Overview Table Link */
-        .overview-section {
-            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-            padding: 30px;
+
+        /* Overview Banner Style */
+        .overview-banner {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            color: white;
+            padding: 40px;
             border-radius: 24px;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            border: 1px solid #334155;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255,255,255,0.1);
         }
-        .overview-section h2 { margin: 0; font-size: 1.5rem; }
-        .overview-btn {
-            background: var(--accent);
+        .overview-text h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.8rem;
+        }
+        .overview-text p {
+            margin: 0;
+            opacity: 0.8;
+        }
+        .btn-overview {
+            background-color: #3b82f6;
             color: white;
-            padding: 12px 24px;
+            padding: 15px 30px;
             border-radius: 12px;
             text-decoration: none;
             font-weight: 700;
-            transition: transform 0.2s;
+            transition: all 0.3s;
+            white-space: nowrap;
         }
-        .overview-btn:hover { transform: scale(1.05); }
+        .btn-overview:hover {
+            background-color: #2563eb;
+            transform: scale(1.05);
+        }
 
-        /* Startup Grid */
+        /* Grid & Cards */
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 25px;
         }
         .card {
             background: var(--card-bg);
-            border: 1px solid #222;
-            border-radius: 24px;
-            padding: 40px;
+            border-radius: 20px;
+            padding: 30px;
             text-decoration: none;
             color: inherit;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
         .card:hover {
-            transform: translateY(-10px);
-            border-color: var(--accent);
-            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+            border-color: #cbd5e1;
         }
-        .card h2 { font-size: 1.8rem; margin: 0 0 12px 0; font-weight: 700; }
-        .card p { color: var(--text-dim); line-height: 1.6; margin-bottom: 30px; font-size: 0.95rem; }
-        
-        .badge {
-            display: inline-block;
-            padding: 5px 12px;
-            border-radius: 100px;
-            font-size: 0.7rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 20px;
+        .card h3 {
+            margin: 0 0 12px 0;
+            font-size: 1.4rem;
         }
-        .ai { background: rgba(59, 130, 246, 0.1); color: #3b82f6; }
-        .robotics { background: rgba(168, 85, 247, 0.1); color: #a855f7; }
-        .browser { background: rgba(255, 255, 255, 0.1); color: #fff; }
-        .health { background: rgba(16, 185, 129, 0.1); color: #10b981; }
-
-        .btn-text {
+        .card p {
+            font-size: 0.95rem;
+            color: #64748b;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+        .link-text {
+            color: var(--primary);
             font-weight: 700;
-            color: var(--accent);
+            font-size: 0.9rem;
             display: flex;
             align-items: center;
         }
-        .btn-text::after { content: '→'; margin-left: 10px; transition: margin 0.3s; }
-        .card:hover .btn-text::after { margin-left: 15px; }
+        .link-text::after {
+            content: '→';
+            margin-left: 8px;
+        }
+
+        /* Branding Borders */
+        .skroutz { border-top: 5px solid #f60; }
+        .viva { border-top: 5px solid #00d1ff; }
+        .beat { border-top: 5px solid #e74c3c; }
+        .efood { border-top: 5px solid #ff0000; }
+        .blueground { border-top: 5px solid #002349; }
+        .instashop { border-top: 5px solid #27ae60; }
+        .flexcar { border-top: 5px solid #3b82f6; }
+        .avocarrot { border-top: 5px solid #ff6b6b; }
+
+        @media (max-width: 768px) {
+            .overview-banner {
+                flex-direction: column;
+                text-align: center;
+                gap: 25px;
+            }
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         <header>
-            <h1>The Growth Radar</h1>
-            <p class="subtitle">A weekly deep-dive into the DNA of high-growth companies. We break down the strategic pivots, funding milestones, and scaling secrets of the world's most disruptive startups.</p>
+            <h1>Greek Startup Ecosystem</h1>
+            <p class="subtitle">Μια ψηφιακή αναδρομή στις φάσεις ανάπτυξης, τις χρηματοδοτήσεις και τα επιτεύγματα των κορυφαίων ελληνικών startups.</p>
         </header>
 
-       
+        <section class="overview-banner">
+            <div class="overview-text">
+                <h2>Συγκριτική Ανάλυση</h2>
+                <p>Δείτε όλες τις startups δίπλα-δίπλα, ταξινομημένες ανά φάση ανάπτυξης.</p>
+            </div>
+            <a href="overview.html" class="btn-overview">Προβολή Πίνακα</a>
+        </section>
 
         <main class="grid">
-            <a href="arc.html" class="card">
-                <span class="badge browser">Browser / AI</span>
+            <a href="skroutz.html" class="card skroutz">
                 <div>
-                    <h2>Arc</h2>
-                    <p>The Browser Company is rethinking the internet with a Chromium-based "operating system" for the web.</p>
+                    <h3>Skroutz</h3>
+                    <p>Η εξέλιξη από μια μηχανή σύγκρισης τιμών στο απόλυτο e-commerce marketplace της Ελλάδας.</p>
                 </div>
-                <span class="btn-text">View Roadmap</span>
+                <span class="link-text">Ανάλυση Φάσεων</span>
             </a>
 
-            <a href="figureAI.html" class="card">
-                <span class="badge robotics">Robotics</span>
+            <a href="viva.html" class="card viva">
                 <div>
-                    <h2>Figure AI</h2>
-                    <p>Developing general-purpose humanoid robots to solve labor shortages in manufacturing and logistics.</p>
+                    <h3>Viva.com</h3>
+                    <p>Το ταξίδι προς το Unicorn status και η κυριαρχία στις ευρωπαϊκές πληρωμές.</p>
                 </div>
-                <span class="btn-text">View Roadmap</span>
+                <span class="link-text">Ανάλυση Φάσεων</span>
             </a>
 
-            <a href="castAI.html" class="card">
-                <span class="badge ai">Cloud Ops</span>
+            <a href="beat.html" class="card beat">
                 <div>
-                    <h2>CAST AI</h2>
-                    <p>Autonomous Kubernetes optimization reducing cloud infrastructure waste by over 60%.</p>
+                    <h3>Beat</h3>
+                    <p>Η ιστορία της Taxibeat που ξεκίνησε από την Αθήνα και κατέκτησε τη Λατινική Αμερική.</p>
                 </div>
-                <span class="btn-text">View Roadmap</span>
+                <span class="link-text">Ανάλυση Φάσεων</span>
             </a>
 
-            <a href="parloa.html" class="card">
-                <span class="badge ai">Conversational AI</span>
+            <a href="efood.html" class="card efood">
                 <div>
-                    <h2>Parloa</h2>
-                    <p>Empowering enterprises to automate customer service with natural, human-like voice AI.</p>
+                    <h3>efood</h3>
+                    <p>Η δημιουργία της μεγαλύτερης πλατφόρμας delivery και το επιτυχημένο exit στη Delivery Hero.</p>
                 </div>
-                <span class="btn-text">View Roadmap</span>
+                <span class="link-text">Ανάλυση Φάσεων</span>
             </a>
 
-            <a href="aikido.html" class="card">
-                <span class="badge ai">Cybersecurity</span>
+            <a href="blueground.html" class="card blueground">
                 <div>
-                    <h2>Aikido</h2>
-                    <p>DevSecOps platform simplifying cloud security for developers by cutting through false positives.</p>
+                    <h3>Blueground</h3>
+                    <p>Το Scale-up μοντέλο που άλλαξε το Real Estate σε παγκόσμιο επίπεδο.</p>
                 </div>
-                <span class="btn-text">View Roadmap</span>
+                <span class="link-text">Ανάλυση Φάσεων</span>
             </a>
 
-            <a href="touchlab.html" class="card">
-                <span class="badge robotics">Haptics</span>
+            <a href="instashop.html" class="card instashop">
                 <div>
-                    <h2>Touchlab</h2>
-                    <p>Giving robots a human-like sense of touch through thin, durable electronic sensing skins.</p>
+                    <h3>InstaShop</h3>
+                    <p>Το ελληνικό success story στη Μέση Ανατολή και η εξαγορά των 360 εκατομμυρίων.</p>
                 </div>
-                <span class="btn-text">View Roadmap</span>
+                <span class="link-text">Ανάλυση Φάσεων</span>
             </a>
 
-            <a href="aheadhealth.html" class="card">
-                <span class="badge health">Telehealth</span>
+            <a href="flexcar.html" class="card flexcar">
                 <div>
-                    <h2>Ahead Health</h2>
-                    <p>Analyzing the telehealth boom and the challenges of modern ADHD medication management.</p>
+                    <h3>FlexCar</h3>
+                    <p>Η ραγδαία ανάπτυξη της συνδρομητικής αυτοκίνησης και τα τεράστια rounds χρηματοδότησης.</p>
                 </div>
-                <span class="btn-text">View Roadmap</span>
+                <span class="link-text">Ανάλυση Φάσεων</span>
+            </a>
+
+            <a href="avocarrot.html" class="card avocarrot">
+                <div>
+                    <h3>Avocarrot</h3>
+                    <p>Ένα υποδειγματικό case study για το πώς μια Ad-Tech startup φτάνει σε επιτυχημένο exit.</p>
+                </div>
+                <span class="link-text">Ανάλυση Φάσεων</span>
             </a>
         </main>
     </div>

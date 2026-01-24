@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Startup Watch - Innovation Hub</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>The Growth Radar | Global Startup Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg: #0a0a0a;
@@ -38,11 +38,37 @@
             -webkit-text-fill-color: transparent;
         }
         .subtitle {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: var(--text-dim);
             max-width: 700px;
-            margin: 0 auto;
+            margin: 0 auto 40px;
+            line-height: 1.6;
         }
+        
+        /* Overview Table Link */
+        .overview-section {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            padding: 30px;
+            border-radius: 24px;
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #334155;
+        }
+        .overview-section h2 { margin: 0; font-size: 1.5rem; }
+        .overview-btn {
+            background: var(--accent);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform 0.2s;
+        }
+        .overview-btn:hover { transform: scale(1.05); }
+
+        /* Startup Grid */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -65,31 +91,22 @@
             border-color: var(--accent);
             box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
         }
-        .card h2 {
-            font-size: 1.8rem;
-            margin: 0 0 12px 0;
-            font-weight: 700;
-        }
-        .card p {
-            color: var(--text-dim);
-            line-height: 1.6;
-            margin-bottom: 30px;
-            font-size: 1rem;
-        }
+        .card h2 { font-size: 1.8rem; margin: 0 0 12px 0; font-weight: 700; }
+        .card p { color: var(--text-dim); line-height: 1.6; margin-bottom: 30px; font-size: 0.95rem; }
+        
         .badge {
             display: inline-block;
             padding: 5px 12px;
             border-radius: 100px;
-            font-size: 0.75rem;
-            font-weight: 700;
+            font-size: 0.7rem;
+            font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 20px;
         }
-        /* Sector Colors */
         .ai { background: rgba(59, 130, 246, 0.1); color: #3b82f6; }
         .robotics { background: rgba(168, 85, 247, 0.1); color: #a855f7; }
-        .security { background: rgba(244, 63, 94, 0.1); color: #f43f5e; }
+        .browser { background: rgba(255, 255, 255, 0.1); color: #fff; }
         .health { background: rgba(16, 185, 129, 0.1); color: #10b981; }
 
         .btn-text {
@@ -98,39 +115,44 @@
             display: flex;
             align-items: center;
         }
-        .btn-text::after {
-            content: '→';
-            margin-left: 10px;
-            transition: margin 0.3s;
-        }
-        .card:hover .btn-text::after {
-            margin-left: 15px;
-        }
+        .btn-text::after { content: '→'; margin-left: 10px; transition: margin 0.3s; }
+        .card:hover .btn-text::after { margin-left: 15px; }
     </style>
 </head>
 <body>
 
     <div class="container">
         <header>
-            <h1>Global Innovation</h1>
-            <p class="subtitle">Exploring the growth trajectories of the world's most disruptive startups in AI, Robotics, and Deep Tech.</p>
+            <h1>The Growth Radar</h1>
+            <p class="subtitle">A weekly deep-dive into the DNA of high-growth companies. We break down the strategic pivots, funding milestones, and scaling secrets of the world's most disruptive startups.</p>
         </header>
 
+       
+
         <main class="grid">
+            <a href="arc.html" class="card">
+                <span class="badge browser">Browser / AI</span>
+                <div>
+                    <h2>Arc</h2>
+                    <p>The Browser Company is rethinking the internet with a Chromium-based "operating system" for the web.</p>
+                </div>
+                <span class="btn-text">View Roadmap</span>
+            </a>
+
             <a href="figureAI.html" class="card">
                 <span class="badge robotics">Robotics</span>
                 <div>
                     <h2>Figure AI</h2>
-                    <p>Building the world's first commercially viable general-purpose humanoid robot.</p>
+                    <p>Developing general-purpose humanoid robots to solve labor shortages in manufacturing and logistics.</p>
                 </div>
                 <span class="btn-text">View Roadmap</span>
             </a>
 
             <a href="castAI.html" class="card">
-                <span class="badge ai">Cloud AI</span>
+                <span class="badge ai">Cloud Ops</span>
                 <div>
                     <h2>CAST AI</h2>
-                    <p>Autonomous Kubernetes optimization platform reducing cloud waste by up to 75%.</p>
+                    <p>Autonomous Kubernetes optimization reducing cloud infrastructure waste by over 60%.</p>
                 </div>
                 <span class="btn-text">View Roadmap</span>
             </a>
@@ -139,16 +161,16 @@
                 <span class="badge ai">Conversational AI</span>
                 <div>
                     <h2>Parloa</h2>
-                    <p>Revolutionizing enterprise customer service with human-like AI voice automation.</p>
+                    <p>Empowering enterprises to automate customer service with natural, human-like voice AI.</p>
                 </div>
                 <span class="btn-text">View Roadmap</span>
             </a>
 
             <a href="aikido.html" class="card">
-                <span class="badge security">Cybersecurity</span>
+                <span class="badge ai">Cybersecurity</span>
                 <div>
                     <h2>Aikido</h2>
-                    <p>DevSecOps platform simplifying security for developers by cutting through the noise.</p>
+                    <p>DevSecOps platform simplifying cloud security for developers by cutting through false positives.</p>
                 </div>
                 <span class="btn-text">View Roadmap</span>
             </a>
@@ -157,7 +179,7 @@
                 <span class="badge robotics">Haptics</span>
                 <div>
                     <h2>Touchlab</h2>
-                    <p>Developing electronic "sensing skin" to give robots a human-like sense of touch.</p>
+                    <p>Giving robots a human-like sense of touch through thin, durable electronic sensing skins.</p>
                 </div>
                 <span class="btn-text">View Roadmap</span>
             </a>
@@ -166,7 +188,7 @@
                 <span class="badge health">Telehealth</span>
                 <div>
                     <h2>Ahead Health</h2>
-                    <p>The rise of digital-first mental health care and modern ADHD management.</p>
+                    <p>Analyzing the telehealth boom and the challenges of modern ADHD medication management.</p>
                 </div>
                 <span class="btn-text">View Roadmap</span>
             </a>

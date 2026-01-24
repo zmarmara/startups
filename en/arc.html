@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growth Roadmap & SaaS Napkin - The Browser Company (Arc)</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #fdfdfd;
+        }
+        h1, h2 { color: #1a202c; text-align: center; }
+        h1 { font-weight: 900; letter-spacing: -1.5px; font-size: 3rem; }
+        .subtitle { text-align: center; color: #718096; margin-bottom: 50px; }
+
+        /* Phases Styling */
+        .phase-container { max-width: 800px; margin: 0 auto 60px; }
+        .phase { background: #fff; margin-bottom: 12px; border-radius: 12px; border: 1px solid #e2e8f0; overflow: hidden; }
+        .phase-header { background-color: #1a202c; color: #fff; padding: 18px; cursor: pointer; font-weight: 600; display: flex; justify-content: space-between; }
+        .phase-content { padding: 25px; display: none; }
+        .label { font-weight: bold; color: #4a5568; display: block; text-transform: uppercase; font-size: 0.7rem; margin-bottom: 4px; }
+
+        /* SaaS Napkin Table Styling */
+        .napkin-wrapper { overflow-x: auto; margin-top: 40px; }
+        table { width: 100%; border-collapse: collapse; background: white; border: 1px solid #e2e8f0; border-radius: 12px; }
+        th, td { padding: 15px; border: 1px solid #e2e8f0; font-size: 0.85rem; vertical-align: top; }
+        th { background: #f8fafc; color: #475569; text-transform: uppercase; font-size: 0.75rem; }
+        .feature-col { font-weight: bold; background: #f8fafc; color: #1a202c; width: 150px; }
+        .stage-title { font-weight: 800; color: #3182ce; text-align: center; background: #ebf8ff; }
+    </style>
+</head>
+<body>
+
+    <h1>The Browser Company (Arc)</h1>
+    <p class="subtitle">Analyzing the "SaaS Napkin" Benchmarks and Growth Phases</p>
+
+    <div class="phase-container">
+        <h2>Growth Phases</h2>
+        <div class="phase">
+            <div class="phase-header">1. Problem Discovery & Vision <span>+</span></div>
+            <div class="phase-content">
+                <span class="label">Strategy</span> Rethinking the browser as a desktop "operating system" rather than just a tab-viewer.
+            </div>
+        </div>
+        <div class="phase">
+            <div class="phase-header">2. Solution Exploration (Arc Beta) <span>+</span></div>
+            <div class="phase-content">
+                <span class="label">Strategy</span> Building a hype-driven invite system to validate UI/UX innovations like Spaces and Command Bar.
+            </div>
+        </div>
+        <div class="phase">
+            <div class="phase-header">3. Scaling & Monetization <span>+</span></div>
+            <div class="phase-content">
+                <span class="label">Strategy</span> Expanding to Windows and mobile while integrating AI (Arc Max) for "agentic" browsing.
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>The SaaS Napkin</h2>
+    <div class="napkin-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th class="feature-col">Feature</th>
+                    <th class="stage-title">Pre-Seed</th>
+                    <th class="stage-title">Seed</th>
+                    <th class="stage-title">Series A</th>
+                    <th class="stage-title">Series B</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="feature-col">ARR / Growth</td>
+                    <td>$0 - $10k (Idea/MVP)</td>
+                    <td>$10k - $500k ARR</td>
+                    <td>$1M - $3M ARR (3x YoY)</td>
+                    <td>$5M - $15M ARR (2x-3x YoY)</td>
+                </tr>
+                <tr>
+                    <td class="feature-col">Valuation / Round</td>
+                    <td>$5M - $10M Cap / $1M-$2M</td>
+                    <td>$15M - $25M / $3M-$5M</td>
+                    <td>$40M - $80M / $10M-$15M</td>
+                    <td>$150M - $500M / $40M-$60M</td>
+                </tr>
+                <tr>
+                    <td class="feature-col">Team</td>
+                    <td>Founders + 2-3 engineers</td>
+                    <td>5-10 people (Product heavy)</td>
+                    <td>15-30 people (Add Sales/Ops)</td>
+                    <td>50-100+ (Specialized roles)</td>
+                </tr>
+                <tr>
+                    <td class="feature-col">Product / Market</td>
+                    <td>Concept & Prototype</td>
+                    <td>Early Traction / Beta</td>
+                    <td>Verified PMF & Expansion</td>
+                    <td>Market Leader in niche</td>
+                </tr>
+                <tr>
+                    <td class="feature-col">Sales / Marketing</td>
+                    <td>Founder-led selling</td>
+                    <td>Inbound / Organic Hype</td>
+                    <td>First sales hires / Paid ads</td>
+                    <td>Repeatable sales machine</td>
+                </tr>
+                <tr>
+                    <td class="feature-col">Capital Efficiency</td>
+                    <td>Burn for R&D</td>
+                    <td>Testing unit economics</td>
+                    <td>LTV/CAC > 3x</td>
+                    <td>Payback period < 12 months</td>
+                </tr>
+                <tr>
+                    <td class="feature-col">Moat</td>
+                    <td>Founder pedigree/Idea</td>
+                    <td>Initial User Community</td>
+                    <td>Product stickiness/Data</td>
+                    <td>Network effects/Ecosystem</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const headers = document.querySelectorAll('.phase-header');
+        headers.forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const isOpen = content.style.display === 'block';
+                content.style.display = isOpen ? 'none' : 'block';
+                header.querySelector('span').innerText = isOpen ? '+' : '-';
+            });
+        });
+    </script>
+</body>
+</html>
