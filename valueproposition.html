@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Value Propositions | Strategic Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --dark-navy: #0f172a;
+            --electric-blue: #38bdf8;
+            --card-bg: #1e293b;
+            --text-light: #f8fafc;
+            --text-dim: #94a3b8;
+            --accent-glow: rgba(56, 189, 248, 0.15);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-navy);
+            color: var(--text-light);
+            margin: 0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            text-align: center;
+            padding: 100px 20px;
+            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+            border-bottom: 1px solid #334155;
+        }
+
+        h1 { 
+            font-size: 3.5rem; 
+            margin-bottom: 15px; 
+            color: var(--electric-blue); 
+            letter-spacing: -2px;
+            font-weight: 900;
+        }
+
+        .hero-sub { 
+            font-size: 1.25rem; 
+            color: var(--text-dim); 
+            max-width: 800px; 
+            margin: 0 auto; 
+        }
+
+        .container { 
+            max-width: 1100px; 
+            margin: 0 auto; 
+            padding: 60px 20px; 
+        }
+
+        .startup-section {
+            background: var(--card-bg);
+            border-radius: 28px;
+            padding: 50px;
+            margin-bottom: 50px;
+            border: 1px solid #334155;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .startup-section:hover {
+            border-color: var(--electric-blue);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .tag {
+            color: var(--electric-blue);
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            display: inline-block;
+            margin-bottom: 15px;
+            background: rgba(56, 189, 248, 0.1);
+            padding: 4px 12px;
+            border-radius: 8px;
+        }
+
+        h2 { 
+            font-size: 2.5rem; 
+            margin: 0 0 25px 0; 
+            font-weight: 900;
+        }
+
+        .grid-info { 
+            display: grid; 
+            grid-template-columns: 1.2fr 1fr; 
+            gap: 40px; 
+            align-items: start;
+        }
+
+        .problem-text {
+            font-size: 1.1rem;
+            color: var(--text-dim);
+        }
+
+        .problem-text strong {
+            color: var(--text-light);
+            display: block;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .vp-box {
+            background: linear-gradient(145deg, rgba(56, 189, 248, 0.1), rgba(56, 189, 248, 0.02));
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+
+        .vp-box strong { 
+            display: block; 
+            color: var(--electric-blue); 
+            margin-bottom: 12px; 
+            text-transform: uppercase; 
+            font-size: 0.9rem; 
+            font-weight: 800;
+        }
+
+        .vp-box p {
+            margin: 0;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text-light);
+        }
+
+        @media (max-width: 850px) {
+            .grid-info { grid-template-columns: 1fr; gap: 25px; }
+            h1 { font-size: 2.5rem; }
+            .startup-section { padding: 30px; }
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 80px 20px;
+            color: var(--text-dim);
+            border-top: 1px solid #334155;
+            font-weight: 600;
+            background: #0b1221;
+        }
+        .footer-link {
+            color: var(--electric-blue);
+            text-decoration: none;
+            margin-bottom: 20px;
+            display: inline-block;
+            font-size: 0.9rem;
+            transition: opacity 0.2s;
+            border: 1px solid var(--electric-blue);
+            padding: 8px 20px;
+            border-radius: 50px;
+        }
+        .footer-link:hover {
+            background: rgba(56, 189, 248, 0.1);
+        }
+        .contact-info {
+            display: block;
+            margin-top: 15px;
+            font-size: 0.85rem;
+            opacity: 0.8;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>The Value Proposition Matrix</h1>
+    <p class="hero-sub">Ανάλυση του στρατηγικού πλεονεκτήματος και της επίλυσης προβλημάτων των κορυφαίων Startups του Ελληνικού Οικοσυστήματος.</p>
+</header>
+
+<div class="container">
+
+    <section class="startup-section">
+        <span class="tag">Ad-Tech / Exit Study</span>
+        <h2>Avocarrot</h2>
+        <div class="grid-info">
+            <div class="problem-text">
+                <strong>Το Πρόβλημα:</strong> 
+                Οι παραδοσιακές διαφημίσεις (banners) στις mobile εφαρμογές ήταν παρεμβατικές, είχαν χαμηλή απόδοση και υποβάθμιζαν την εμπειρία του χρήστη.
+            </div>
+            <div class="vp-box">
+                <strong>Η Πρόταση Αξίας:</strong>
+                <p>Μια πλατφόρμα "Native Ads" που επιτρέπει την ενσωμάτωση διαφημίσεων οι οποίες εναρμονίζονται πλήρως με το περιεχόμενο, αυξάνοντας τα έσοδα χωρίς να ενοχλούν τον χρήστη.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="startup-section">
+        <span class="tag">Fintech / Unicorn</span>
+        <h2>Viva.com</h2>
+        <div class="grid-info">
+            <div class="problem-text">
+                <strong>Το Πρόβλημα:</strong> 
+                Περίπλοκες και γεωγραφικά περιορισμένες τραπεζικές υπηρεσίες που εμπόδιζαν την άμεση και ομοιόμορφη επέκταση των εμπόρων στην Ευρώπη.
+            </div>
+            <div class="vp-box">
+                <strong>Η Πρόταση Αξίας:</strong>
+                <p>Μια ενιαία, cloud-based υποδομή πληρωμών που επιτρέπει στις επιχειρήσεις να δέχονται πληρωμές ακαριαία, μετατρέποντας οποιαδήποτε συσκευή σε POS.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="startup-section">
+        <span class="tag">Mobility / Fintech</span>
+        <h2>Flexcar</h2>
+        <div class="grid-info">
+            <div class="problem-text">
+                <strong>Το Πρόβλημα:</strong> 
+                Οι άκαμπτες δεσμεύσεις των παραδοσιακών μεθόδων απόκτησης αυτοκινήτου (δάνεια, leasing) με μεγάλες προκαταβολές και πολυετή συμβόλαια.
+            </div>
+            <div class="vp-box">
+                <strong>Η Πρόταση Αξίας:</strong>
+                <p>Απόλυτη ευελιξία μέσω του "Car-as-a-Service": χωρίς προκαταβολή, χωρίς δεσμεύσεις χρόνου και με δικαίωμα επιστροφής ή αγοράς ανά πάσα στιγμή.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="startup-section">
+        <span class="tag">Quick Commerce / Exit Study</span>
+        <h2>Instashop</h2>
+        <div class="grid-info">
+            <div class="problem-text">
+                <strong>Το Πρόβλημα:</strong> 
+                Η ανάγκη για άμεση παραλαβή ειδών super market και καθημερινής ανάγκης, ξεπερνώντας τους μεγάλους χρόνους αναμονής των κλασικών online παραγγελιών.
+            </div>
+            <div class="vp-box">
+                <strong>Η Πρόταση Αξίας:</strong>
+                <p>On-demand σύνδεση με τοπικά καταστήματα για παράδοση προϊόντων σε λιγότερο από 60 λεπτά, προσφέροντας την απόλυτη ευκολία στις καθημερινές αγορές.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="startup-section">
+        <span class="tag">Audio Tech / AI / Acquisition</span>
+        <h2>Accusonus</h2>
+        <div class="grid-info">
+            <div class="problem-text">
+                <strong>Το Πρόβλημα:</strong> 
+                Η επεξεργασία ήχου υψηλής ποιότητας απαιτούσε ακριβό εξοπλισμό και εξειδικευμένες γνώσεις, δημιουργώντας εμπόδια στους ανεξάρτητους δημιουργούς περιεχομένου.
+            </div>
+            <div class="vp-box">
+                <strong>Η Πρόταση Αξίας:</strong>
+                <p>Εκδημοκρατισμός της ηχοληψίας μέσω AI εργαλείων που επιδιορθώνουν αυτόματα τον ήχο, προσφέροντας επαγγελματικό αποτέλεσμα με το πάτημα ενός κουμπιού.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="startup-section">
+        <span class="tag">E-Commerce / Marketplace</span>
+        <h2>Skroutz</h2>
+        <div class="grid-info">
+            <div class="problem-text">
+                <strong>Το Πρόβλημα:</strong> 
+                Έλλειψη διαφάνειας στις τιμές και αβεβαιότητα στην αξιοπιστία των online καταστημάτων σε μια κατακερματισμένη αγορά.
+            </div>
+            <div class="vp-box">
+                <strong>Η Πρόταση Αξίας:</strong>
+                <p>Διαφάνεια τιμών και εγγύηση ασφάλειας αγορών μέσω ενός ενιαίου marketplace που προσφέρει ολοκληρωμένη εμπειρία από την αναζήτηση έως την παράδοση.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="startup-section">
+        <span class="tag">PropTech</span>
+        <h2>Blueground</h2>
+        <div class="grid-info">
+            <div class="problem-text">
+                <strong>Το Πρόβλημα:</strong> 
+                Η δυσκολία εύρεσης ποιοτικής, επιπλωμένης στέγης για μεσοπρόθεσμη διαμονή χωρίς τις γραφειοκρατικές δεσμεύσεις των παραδοσιακών μισθώσεων.
+            </div>
+            <div class="vp-box">
+                <strong>Η Πρόταση Αξίας:</strong>
+                <p>Υψηλής αισθητικής, πλήρως εξοπλισμένα διαμερίσματα σε παγκόσμιες μεγαλουπόλεις, έτοιμα για άμεση κατοίκηση με ευέλικτους όρους.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="startup-section">
+        <span class="tag">Mobility</span>
+        <h2>Beat</h2>
+        <div class="grid-info">
+            <div class="problem-text">
+                <strong>Το Πρόβλημα:</strong> 
+                Αναμονή, αβεβαιότητα στην τιμή και έλλειψη ελέγχου της ποιότητας στις καθημερινές αστικές μετακινήσεις με ταξί.
+            </div>
+            <div class="vp-box">
+                <strong>Η Πρόταση Αξίας:</strong>
+                <p>Ασφαλής και ελεγχόμενη μετακίνηση μέσω smartphone, με αξιολόγηση οδηγών και προκαθορισμένο κόστος διαδρομής.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="startup-section">
+        <span class="tag">Food Delivery</span>
+        <h2>efood</h2>
+        <div class="grid-info">
+            <div class="problem-text">
+                <strong>Το Πρόβλημα:</strong> 
+                Περιορισμένες επιλογές και χρονοβόρα διαδικασία παραγγελίας φαγητού μέσω τηλεφώνου χωρίς ψηφιακή παρακολούθηση.
+            </div>
+            <div class="vp-box">
+                <strong>Η Πρόταση Αξίας:</strong>
+                <p>Άμεση πρόσβαση σε χιλιάδες καταστήματα εστίασης με ψηφιακή πληρωμή, αξιολογήσεις και real-time παρακολούθηση της παραγγελίας.</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+	<footer>
+            <div class="copyright">
+                &copy; 2026 Startup Lab | Zoe Marmara (<a href="mailto:zmarmara@econ.uoa.gr" style="color: inherit; text-decoration: none;">zmarmara@econ.uoa.gr</a>)
+            </div>
+        </footer>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avocarrot Exit | Fund Roadmap Case Study</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 20px;
+            height: 100%; width: 2px;
+            background: #cbd5e1;
+        }
+        .highlight-card { border-left: 5px solid #10b981; }
+		
+		 /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 80px 20px;
+            color: var(--text-dim);
+            font-weight: 600;
+        }
+        .footer-link {
+            color: var(--electric-blue);
+            text-decoration: none;
+            margin-bottom: 20px;
+            display: inline-block;
+            font-size: 0.9rem;
+            transition: opacity 0.2s;
+
+            padding: 8px 20px;
+            border-radius: 50px;
+        }
+        .footer-link:hover {
+            background: rgba(56, 189, 248, 0.1);
+        }
+        .contact-info {
+            display: block;
+            margin-top: 15px;
+            font-size: 0.85rem;
+            opacity: 0.8;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <header class="bg-emerald-900 text-white py-16 px-6 relative overflow-hidden">
+        <div class="max-w-5xl mx-auto relative z-10">
+            <h1 class="text-4xl font-extrabold mb-2">The Avocarrot Exit Study</h1>
+            <p class="text-emerald-200 text-xl italic">Πώς ένας "Μονόκερος" των AdTech πέρασε από το Drawdown στο Exit.</p>
+        </div>
+        <div class="absolute top-0 right-0 opacity-10">
+            <i class="fas fa-seedling text-[200px]"></i>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12">
+
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                <h3 class="font-bold text-emerald-700 uppercase text-xs tracking-widest mb-4">Financial Structure</h3>
+                <div class="space-y-3">
+                    <div class="flex justify-between border-b pb-2">
+                        <span>Minimum Fund Size</span>
+                        <span class="font-bold">€5.000.000</span>
+                    </div>
+                    <div class="flex justify-between border-b pb-2">
+                        <span>Hard Cap (Max Size)</span>
+                        <span class="font-bold">€15.000.000</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Net Invested Capital</span>
+                        <span class="text-emerald-600 font-bold">~€13.5M (μετά τα Fees)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100 flex items-center">
+                <p class="text-sm leading-relaxed text-emerald-900 italic">
+                    <strong>Context:</strong> Το Fund (π.χ. Venture Capital) υπογράφει <strong>Custody Agreement</strong> με συστημική τράπεζα για να διασφαλίσει τα κεφάλαια των LPs (Limited Partners) πριν το <strong>First Closing</strong>.
+                </p>
+            </div>
+        </div>
+
+        <div class="relative timeline-container ml-2">
+            
+            <div class="mb-12 ml-12 relative">
+                <div class="absolute -left-[54px] top-0 bg-white border-2 border-emerald-500 w-8 h-8 rounded-full flex items-center justify-center">
+                    <i class="fas fa-hand-holding-usd text-emerald-500 text-xs"></i>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 highlight-card">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="font-black text-lg">Initial Investment in Avocarrot</h4>
+                        <span class="bg-slate-800 text-white text-[10px] px-2 py-1 rounded">2013-2014</span>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4">Το Fund εντοπίζει την startup και ξεκινά η διαδικασία άντλησης.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-slate-50 p-3 rounded border border-dashed">
+                            <span class="block text-[10px] font-bold text-slate-400 uppercase">Drawdown Notice</span>
+                            <span class="text-xs">Ειδοποίηση 15 ημέρες πριν: "Χρειαζόμαστε κεφάλαιο για το Seed round."</span>
+                        </div>
+                        <div class="bg-slate-50 p-3 rounded border border-dashed">
+                            <span class="block text-[10px] font-bold text-slate-400 uppercase">Call Notice</span>
+                            <span class="text-xs">"Καταθέστε το ποσό στον λογαριασμό Custody μέχρι τις 15 του μηνός."</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-12 ml-12 relative">
+                <div class="absolute -left-[54px] top-0 bg-white border-2 border-slate-400 w-8 h-8 rounded-full flex items-center justify-center">
+                    <i class="fas fa-chart-line text-slate-400 text-xs"></i>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                    <h4 class="font-black text-lg mb-2">Investment Period (Year 2-4)</h4>
+                    <p class="text-sm text-slate-600">Η Avocarrot αναπτύσσεται. Το Fund συνεχίζει να χρησιμοποιεί το <strong>Net Invested Capital</strong> για follow-on επενδύσεις, ενώ τα <strong>Management Fees</strong> καλύπτουν τη λειτουργία της ομάδας διαχείρισης.</p>
+                </div>
+            </div>
+
+            <div class="mb-12 ml-12 relative">
+                <div class="absolute -left-[54px] top-0 bg-emerald-600 border-2 border-white w-10 h-10 rounded-full flex items-center justify-center -ml-1 shadow-lg">
+                    <i class="fas fa-rocket text-white text-sm"></i>
+                </div>
+                <div class="bg-emerald-600 p-8 rounded-xl shadow-xl text-white">
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="font-black text-2xl uppercase tracking-tighter">The Exit ($20M)</h4>
+                        <span class="bg-emerald-400 text-emerald-900 font-bold text-xs px-3 py-1 rounded-full">Σεπτέμβριος 2016</span>
+                    </div>
+                    <p class="text-emerald-100 leading-relaxed">
+                        Η <strong>Glispa Global Group</strong> εξαγοράζει την Avocarrot. Αυτό σηματοδοτεί την έναρξη του <strong>Exit Period</strong> για το Fund. Οι μετοχές μετατρέπονται σε μετρητά.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mb-12 ml-12 relative">
+                <div class="absolute -left-[54px] top-0 bg-white border-2 border-amber-500 w-8 h-8 rounded-full flex items-center justify-center">
+                    <i class="fas fa-piggy-bank text-amber-500 text-xs"></i>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                    <h4 class="font-black text-lg mb-2">Final Distribution & Fund Term</h4>
+                    <p class="text-sm text-slate-600">
+                        Μετά την πώληση, τα χρήματα επιστρέφονται στους επενδυτές (LPs). Το <strong>Term</strong> του Fund πλησιάζει στο τέλος του (συνολικά 10 έτη), έχοντας εκπληρώσει τον στόχο του πριν τη λήξη.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="mt-20 bg-slate-900 text-slate-400 p-8 rounded-3xl">
+            <h3 class="text-white font-bold mb-6 text-center">Quick Glossary (The Avocarrot Way)</h3>
+            <div class="grid md:grid-cols-3 gap-8 text-xs leading-normal">
+                <div>
+                    <span class="text-emerald-400 font-bold block mb-1">CUSTODY AGREEMENT</span>
+                    Η τράπεζα που "κλείδωσε" τα $20M μέχρι να μοιραστούν στους επενδυτές μετά την εξαγορά.
+                </div>
+                <div>
+                    <span class="text-emerald-400 font-bold block mb-1">DRAWDOWN</span>
+                    Όταν οι διαχειριστές "φώναξαν" τα κεφάλαια για να αγοράσουν το πρώτο μερίδιο της Avocarrot.
+                </div>
+                <div>
+                    <span class="text-emerald-400 font-bold block mb-1">TERM</span>
+                    Η 10ετής διάρκεια ζωής του Fund που "έκλεισε" θριαμβευτικά με αυτό το exit.
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+	<footer>
+            <div class="copyright">
+                &copy; 2026 Startup Lab | Zoe Marmara (<a href="mailto:zmarmara@econ.uoa.gr" style="color: inherit; text-decoration: none;">zmarmara@econ.uoa.gr</a>)
+            </div>
+        </footer>
+
+</body>
+</html>

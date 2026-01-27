@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avocarrot Seed Round | Investor Scorecard & COMPS</title>
+    <style>
+        :root {
+            --bg: #f0f2f5;
+            --card-bg: #ffffff;
+            --primary: #2ecc71;
+            --secondary: #34495e;
+            --text: #2c3e50;
+            --border: #dcdde1;
+        }
+
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); padding: 20px; line-height: 1.5; }
+        .container { max-width: 1100px; margin: 0 auto; }
+
+        header { background: var(--secondary); color: white; padding: 40px; border-radius: 12px; text-align: center; margin-bottom: 30px; }
+        .score-badge { background: var(--primary); padding: 10px 20px; border-radius: 50px; font-weight: bold; display: inline-block; margin-top: 10px; }
+
+        section { background: var(--card-bg); padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 30px; }
+        h2 { border-bottom: 2px solid var(--primary); padding-bottom: 10px; margin-bottom: 20px; }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }
+        th, td { padding: 15px; border: 1px solid var(--border); text-align: left; }
+        th { background: #f8f9fa; color: var(--secondary); }
+        .highlight { background: #e8f5e9; font-weight: bold; }
+
+        .weight-pill { font-size: 0.8em; background: #eee; padding: 2px 8px; border-radius: 10px; color: #666; }
+        
+        .metric-bar-container { width: 100%; background: #eee; border-radius: 5px; height: 10px; margin-top: 5px; }
+        .metric-bar { height: 100%; border-radius: 5px; background: var(--primary); }
+
+        .analysis-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        @media (max-width: 800px) { .analysis-grid { grid-template-columns: 1fr; } }
+		 /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 80px 20px;
+            color: var(--text-dim);
+            font-weight: 600;
+        }
+        .footer-link {
+            color: var(--electric-blue);
+            text-decoration: none;
+            margin-bottom: 20px;
+            display: inline-block;
+            font-size: 0.9rem;
+            transition: opacity 0.2s;
+
+            padding: 8px 20px;
+            border-radius: 50px;
+        }
+        .footer-link:hover {
+            background: rgba(56, 189, 248, 0.1);
+        }
+        .contact-info {
+            display: block;
+            margin-top: 15px;
+            font-size: 0.85rem;
+            opacity: 0.8;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Avocarrot: Seed Round Investment Memo</h1>
+        <p>Internal Scorecard & Competitive Analysis (COMPS)</p>
+        <div class="score-badge">Internal Rating: 8.8/10</div>
+    </header>
+
+    <section>
+        <h2>1. Market COMPS (Seed Stage Benchmarking)</h2>
+        <p>Σύγκριση της Avocarrot με παρόμοια Seed-stage AdTech startups της περιόδου.</p>
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Startup</th>
+                        <th>Stage</th>
+                        <th>Est. Valuation</th>
+                        <th>Core Focus</th>
+                        <th>Traction (Monthly)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="highlight">
+                        <td><strong>Avocarrot</strong></td>
+                        <td>Seed</td>
+                        <td>$2M - $4M</td>
+                        <td>Native Ad SDK</td>
+                        <td>100M+ Ad Requests</td>
+                    </tr>
+                    <tr>
+                        <td>Competitor A (US)</td>
+                        <td>Seed</td>
+                        <td>$5M - $7M</td>
+                        <td>Interstitials</td>
+                        <td>250M Ad Requests</td>
+                    </tr>
+                    <tr>
+                        <td>Competitor B (EU)</td>
+                        <td>Seed/Angel</td>
+                        <td>$1.5M - $3M</td>
+                        <td>Video Rewards</td>
+                        <td>40M Ad Requests</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <h2>2. Investor Scorecard (Weighted Assessment)</h2>
+        <p>Αξιολόγηση βάσει της μεθοδολογίας <strong>Scorecard Valuation</strong> για τον καθορισμό της αξίας και του ρίσκου.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Κριτήριο Αξιολόγησης</th>
+                    <th>Βαρύτητα</th>
+                    <th>Score (1-10)</th>
+                    <th>Σχόλια Επενδυτή</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Ομάδα (Management Team)</strong></td>
+                    <td><span class="weight-pill">30%</span></td>
+                    <td>9/10</td>
+                    <td>Συμπληρωματικές δεξιότητες, Tech-heavy DNA, Lean mindset.</td>
+                </tr>
+                <tr>
+                    <td><strong>Product-Market Fit (PMF)</strong></td>
+                    <td><span class="weight-pill">20%</span></td>
+                    <td>8/10</td>
+                    <td>Ισχυρό PMF μετά το pivot στο SDK. Organic inbound ενδιαφέρον.</td>
+                </tr>
+                <tr>
+                    <td><strong>Μέγεθος Αγοράς (TAM)</strong></td>
+                    <td><span class="weight-pill">15%</span></td>
+                    <td>10/10</td>
+                    <td>Mobile Ad Spend σε εκρηκτική άνοδο παγκοσμίως.</td>
+                </tr>
+                <tr>
+                    <td><strong>Ανταγωνισμός (Moats)</strong></td>
+                    <td><span class="weight-pill">10%</span></td>
+                    <td>7/10</td>
+                    <td>Χαμηλά barriers to entry, αλλά το SDK integration δημιουργεί "stickiness".</td>
+                </tr>
+                <tr>
+                    <td><strong>Traction (CAC/CLV/Conv)</strong></td>
+                    <td><span class="weight-pill">15%</span></td>
+                    <td>8/10</td>
+                    <td>Υψηλό Conversion Rate λόγω Native format. Χαμηλό B2B CAC.</td>
+                </tr>
+                <tr>
+                    <td><strong>Exit Potential</strong></td>
+                    <td><span class="weight-pill">10%</span></td>
+                    <td>9/10</td>
+                    <td>Υψηλή πιθανότητα εξαγοράς από DSP/SSP giants (Global M&A).</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <div class="analysis-grid">
+        <section>
+            <h2>3. Unit Economics (Seed Estimates)</h2>
+            <div class="metric">
+                <p><strong>Conversion Rate (Native vs Banner)</strong></p>
+                <div class="metric-bar-container"><div class="metric-bar" style="width: 85%;"></div></div>
+                <small>Native: ~1.5% - 2.0% (Avocarrot)</small>
+            </div>
+            <div class="metric" style="margin-top:15px;">
+                <p><strong>Retention Rate (Developer Stickiness)</strong></p>
+                <div class="metric-bar-container"><div class="metric-bar" style="width: 90%;"></div></div>
+                <small>90% των Devs παραμένουν μετά το integration.</small>
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Investment Thesis</h2>
+            <p><strong>Bull Case:</strong> Η Avocarrot γίνεται το standard layer για native ads παγκοσμίως. Το SDK της ενσωματώνεται σε χιλιάδες apps, δημιουργώντας ένα αδιαπέραστο δίκτυο δεδομένων.</p>
+            <p><strong>Risk:</strong> Συγκέντρωση αγοράς από Google/Facebook (Walled Gardens).</p>
+        </section>
+    </div>
+
+
+	<footer>
+            <div class="copyright">
+                &copy; 2026 Startup Lab | Zoe Marmara (<a href="mailto:zmarmara@econ.uoa.gr" style="color: inherit; text-decoration: none;">zmarmara@econ.uoa.gr</a>)
+            </div>
+        </footer>
+</div>
+
+</body>
+</html>

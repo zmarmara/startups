@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveKit | The Real-Time AI Infrastructure Journey</title>
+    <style>
+        :root {
+            --lk-blue: #0070f3;
+            --lk-dark: #0a0a0a;
+            --lk-grey: #666;
+            --lk-light: #fafafa;
+            --border: #eaeaea;
+        }
+        body { font-family: 'Inter', -apple-system, sans-serif; color: #333; background: var(--lk-light); margin: 0; line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+        
+        header { text-align: center; padding: 100px 20px; background: var(--lk-dark); color: white; border-radius: 24px; margin-bottom: 50px; }
+        .badge { background: var(--lk-blue); color: white; padding: 6px 16px; border-radius: 50px; font-size: 0.85em; font-weight: 600; text-transform: uppercase; }
+        
+        section { background: white; border-radius: 16px; padding: 40px; margin-bottom: 40px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border: 1px solid var(--border); }
+        h2 { color: var(--lk-dark); font-size: 2.2em; margin-top: 0; letter-spacing: -0.02em; }
+        h3 { color: var(--lk-blue); margin-top: 30px; }
+
+        /* Funding Table */
+        .funding-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .funding-table th, .funding-table td { padding: 15px; border-bottom: 1px solid var(--border); text-align: left; }
+        .funding-table th { color: var(--lk-grey); font-weight: 500; }
+        .funding-table tr:last-child td { border: none; }
+        .lead-investor { font-weight: 600; color: var(--lk-dark); }
+
+        .flex-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .logic-card { background: #f9f9f9; padding: 25px; border-radius: 12px; border-left: 4px solid var(--lk-blue); }
+        
+        @media (max-width: 768px) { .flex-grid { grid-template-columns: 1fr; } }
+        
+        footer { text-align: center; padding: 60px; color: var(--lk-grey); border-top: 1px solid var(--border); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <span class="badge">Success Story</span>
+        <h1 style="font-size: 3.5em; margin: 20px 0;">LiveKit Strategy & Growth</h1>
+        <p style="font-size: 1.2em; opacity: 0.8;">How an Open Source project became the backbone of OpenAI's GPT-4o voice mode.</p>
+    </header>
+
+    <section>
+        <h2>1. Problem-First Ideation</h2>
+        <div class="flex-grid">
+            <div>
+                <p>Before LiveKit, building real-time video/audio (WebRTC) was a nightmare for developers. You had two bad choices:</p>
+                <ul>
+                    <li><strong>Proprietary SDKs:</strong> Expensive, "black box" logic, and hard to customize.</li>
+                    <li><strong>Hardcore Self-Hosting:</strong> Managing your own SFU (Selective Forwarding Unit) was technically complex and risky to scale.</li>
+                </ul>
+            </div>
+            <div class="logic-card">
+                <strong>The Hypothesis:</strong> By building a modern, 100% open-source, and cloud-native WebRTC stack, we can capture the entire "Developer-First" market.
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>2. Funding Rounds & Milestones</h2>
+        <p>LiveKit has seen rapid valuation growth by positioning itself as the "infrastructure layer" for the next wave of AI-driven communication.</p>
+        <div style="overflow-x: auto;">
+            <table class="funding-table">
+                <thead>
+                    <tr>
+                        <th>Round</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Key Milestone</th>
+                        <th>Lead Investor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Seed</strong></td>
+                        <td>2021</td>
+                        <td>$7M</td>
+                        <td>Initial Open Source release & Core SFU engine.</td>
+                        <td class="lead-investor">Redpoint</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Series A</strong></td>
+                        <td>2022</td>
+                        <td>$20M+</td>
+                        <td>Launch of LiveKit Cloud (Managed Mesh Network).</td>
+                        <td class="lead-investor">Benchmark</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Series B</strong></td>
+                        <td>2024</td>
+                        <td>$30M+</td>
+                        <td>Partnership with OpenAI; dominance in AI Voice Agents.</td>
+                        <td class="lead-investor">Altimeter / A16Z</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section style="background: var(--lk-dark); color: white; border: none;">
+        <h2 style="color: white;">3. The Product-Market Fit Catalyst</h2>
+        <p>While LiveKit started for video calls, the true <strong>Product-Market Fit</strong> exploded with the rise of **Generative AI**.</p>
+        <div class="flex-grid">
+            <div class="logic-card" style="background: #222; border-color: var(--lk-blue); color: #ddd;">
+                <h4 style="color: white; margin-top:0;">Pre-AI Focus</h4>
+                Focus on human-to-human video (Zoom clones, Fitness apps, Education).
+            </div>
+            <div class="logic-card" style="background: #222; border-color: #00ff88; color: #ddd;">
+                <h4 style="color: white; margin-top:0;">Post-AI Focus</h4>
+                Focus on AI-to-human interaction. Low-latency is the only way for AI agents to sound "human."
+            </div>
+        </div>
+        <p style="margin-top: 30px; text-align: center; font-style: italic;">
+            "LiveKit is to Real-Time AI what Stripe is to Payments."
+        </p>
+    </section>
+
+    <section>
+        <h2>4. Business Model Canvas (Post-Scale)</h2>
+        <div class="flex-grid">
+            <div>
+                <h3>Key Activities</h3>
+                <ul>
+                    <li>Optimizing Global Mesh latency.</li>
+                    <li>Scaling <strong>Egress</strong> (recording/streaming) services.</li>
+                    <li>Building <strong>Agents SDK</strong> (Python/Node) for AI developers.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Revenue Streams</h3>
+                <ul>
+                    <li><strong>Usage-based:</strong> Pay-per-minute for Cloud audio/video.</li>
+                    <li><strong>Ingress/Egress:</strong> Charges for data coming in/out of the network.</li>
+                    <li><strong>Enterprise Support:</strong> Custom SLAs for massive scale.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Confidential Investor Overview | Case Study 2026</p>
+    </footer>
+</div>
+
+</body>
+</html>

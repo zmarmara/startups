@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avocarrot Case Study | Interactive Fund Roadmap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .term-tooltip {
+            @apply cursor-help border-b-2 border-dotted border-emerald-500 font-semibold text-emerald-900;
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip-text {
+            visibility: hidden;
+            width: 240px;
+            background-color: #1e293b;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            padding: 10px;
+            position: absolute;
+            z-index: 50;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.75rem;
+            line-height: 1.2rem;
+            font-weight: normal;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .term-tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* Βέλος για το tooltip */
+        .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #1e293b transparent transparent transparent;
+        }
+		 /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 80px 20px;
+            color: var(--text-dim);
+            font-weight: 600;
+        }
+        .footer-link {
+            color: var(--electric-blue);
+            text-decoration: none;
+            margin-bottom: 20px;
+            display: inline-block;
+            font-size: 0.9rem;
+            transition: opacity 0.2s;
+
+            padding: 8px 20px;
+            border-radius: 50px;
+        }
+        .footer-link:hover {
+            background: rgba(56, 189, 248, 0.1);
+        }
+        .contact-info {
+            display: block;
+            margin-top: 15px;
+            font-size: 0.85rem;
+            opacity: 0.8;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <header class="bg-emerald-950 text-white py-12 px-6 text-center">
+        <h1 class="text-3xl font-bold mb-2">Avocarrot: Από την Επένδυση στο Exit</h1>
+        <p class="text-emerald-400">Διαδραστικός Οδηγός με Ορολογία</p>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12">
+
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 mb-10 leading-relaxed">
+            <h2 class="text-xl font-bold mb-4 flex items-center">
+                <i class="fas fa-info-circle text-emerald-600 mr-2"></i> 
+                Πώς ξεκίνησαν όλα
+            </h2>
+            <p class="mb-4">
+                Πριν το 
+                <span class="term-tooltip">First Closing
+                    <span class="tooltip-text">Η στιγμή που το fund πιάνει το ελάχιστο ποσό και ξεκινά επίσημα τη λειτουργία του.</span>
+                </span>, 
+                το Fund έπρεπε να εξασφαλίσει το 
+                <span class="term-tooltip">Minimum Fund Size
+                    <span class="tooltip-text">Το ελάχιστο ύψος κεφαλαίων που απαιτείται για να ξεκινήσει η επενδυτική δραστηριότητα.</span>
+                </span> 
+                των €5M.
+            </p>
+            <p>
+                Για την ασφάλεια των επενδυτών, υπογράφηκε το 
+                <span class="term-tooltip">Custody Agreement
+                    <span class="tooltip-text">Σύμβαση με τράπεζα (Θεματοφύλακα) που διασφαλίζει ότι τα χρήματα φυλάσσονται με ασφάλεια.</span>
+                </span> 
+                με σκοπό την προστασία των περιουσιακών στοιχείων.
+            </p>
+        </div>
+
+        <div class="space-y-8">
+            
+            <div class="bg-emerald-50 p-6 rounded-xl border-l-8 border-emerald-500">
+                <h3 class="font-bold text-lg mb-2">Φάση Επένδυσης (2013)</h3>
+                <p class="text-sm">
+                    Το Fund εντοπίζει την Avocarrot. Στέλνει ένα 
+                    <span class="term-tooltip">Drawdown Notice
+                        <span class="tooltip-text">Προειδοποίηση προς τους επενδυτές ότι θα χρειαστούν κεφάλαια για μια επένδυση.</span>
+                    </span> 
+                    και στη συνέχεια ένα επίσημο 
+                    <span class="term-tooltip">Call Notice
+                        <span class="tooltip-text">Η εντολή για την πραγματική μεταφορά των χρημάτων στον λογαριασμό του fund.</span>
+                    </span> 
+                    για να ολοκληρωθεί η χρηματοδότηση.
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                <h3 class="font-bold text-lg mb-2">Διαχείριση & Ανάπτυξη</h3>
+                <p class="text-sm">
+                    Κατά τη διάρκεια του 
+                    <span class="term-tooltip">Investment Period
+                        <span class="tooltip-text">Τα πρώτα 4-5 χρόνια του fund όπου γίνονται οι τοποθετήσεις σε startups.</span>
+                    </span>, 
+                    το fund χρησιμοποιεί το 
+                    <span class="term-tooltip">Net Invested Capital
+                        <span class="tooltip-text">Το καθαρό ποσό που επενδύεται στην αγορά, αφού αφαιρεθούν τα διαχειριστικά έξοδα.</span>
+                    </span> 
+                    για να στηρίξει την Avocarrot, ενώ παραμένει εντός του 
+                    <span class="term-tooltip">Maximum Fund Size
+                        <span class="tooltip-text">Το ανώτατο όριο κεφαλαίων (Hard Cap) που μπορεί να αντλήσει το fund. Σημείωση ότι το fund δεν αλλάζει το κεφαλαιακό του μέγεθος.</span>
+                    </span>.
+                </p>
+            </div>
+
+            <div class="bg-slate-900 text-white p-8 rounded-xl shadow-xl">
+                <h3 class="font-bold text-2xl mb-3 text-emerald-400">Το Exit (2016)</h3>
+                <p class="mb-4">
+                    Η εξαγορά της Avocarrot από τη Glispa ολοκληρώνεται. Το Fund ξεκινά το 
+                    <span class="term-tooltip text-white border-white">Exit Period
+                        <span class="tooltip-text">Η περίοδος ρευστοποίησης των επενδύσεων και επιστροφής των χρημάτων στους LPs.</span>
+                    </span>, 
+                    επιστρέφοντας τα κέρδη στους επενδυτές πολύ πριν τη λήξη του συνολικού 
+                    <span class="term-tooltip text-white border-white">Term
+                        <span class="tooltip-text">Η συνολική διάρκεια ζωής του fund (συνήθως 10 έτη).</span>
+                    </span>.
+                </p>
+                <div class="inline-block bg-emerald-500 text-emerald-950 px-4 py-1 rounded-full font-bold text-xs">
+                    SUCCESS: $20M EXIT
+                </div>
+            </div>
+
+        </div>
+
+        <p class="text-center mt-12 text-slate-400 text-sm">
+            <i class="fas fa-mouse-pointer mr-1"></i> Πέρασε το ποντίκι πάνω από τους υπογραμμισμένους όρους για την ερμηνεία.
+        </p>
+
+    </main>
+	
+		<footer>
+            <div class="copyright">
+                &copy; 2026 Startup Lab | Zoe Marmara (<a href="mailto:zmarmara@econ.uoa.gr" style="color: inherit; text-decoration: none;">zmarmara@econ.uoa.gr</a>)
+            </div>
+        </footer>
+
+</body>
+</html>

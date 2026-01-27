@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avocarrot BMC | Lean Case Study</title>
+    <style>
+        :root {
+            --primary: #27ae60;
+            --secondary: #2c3e50;
+            --accent: #e67e22;
+            --bg: #f4f7f6;
+            --text: #333;
+        }
+
+        body { 
+            font-family: 'Inter', -apple-system, sans-serif; 
+            background-color: var(--bg); 
+            color: var(--text); 
+            margin: 0; 
+            padding: 20px; 
+            line-height: 1.6;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--secondary);
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .tagline {
+            display: inline-block;
+            background: var(--primary);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        /* BMC Grid Styling */
+        .bmc-wrapper {
+            overflow-x: auto;
+            margin-bottom: 40px;
+        }
+
+        .bmc-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(2, 280px) 160px;
+            gap: 12px;
+            min-width: 1000px; /* Διατηρεί τη δομή του canvas */
+            background: #bdc3c7;
+            padding: 12px;
+            border-radius: 10px;
+        }
+
+        .bmc-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .bmc-box:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+
+        .bmc-box h3 {
+            margin-top: 0;
+            font-size: 0.95em;
+            color: var(--secondary);
+            border-bottom: 2px solid var(--bg);
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .bmc-box ul { padding-left: 18px; font-size: 0.85em; }
+        .bmc-box li { margin-bottom: 8px; }
+
+        /* Positioning */
+        .kp { grid-column: 1; grid-row: 1 / 3; }
+        .ka { grid-column: 2; grid-row: 1; }
+        .kr { grid-column: 2; grid-row: 2; }
+        .vp { grid-column: 3; grid-row: 1 / 3; border: 2px solid var(--primary); }
+        .cr { grid-column: 4; grid-row: 1; }
+        .ch { grid-column: 4; grid-row: 2; }
+        .cs { grid-column: 5; grid-row: 1 / 3; }
+        .cost { grid-column: 1 / 3; grid-row: 3; }
+        .rev { grid-column: 3 / 6; grid-row: 3; background: #e8f5e9; }
+
+        .pivot-banner {
+            background: #fff3e0;
+            border-left: 5px solid var(--accent);
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 0 8px 8px 0;
+        }
+
+         /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 80px 20px;
+            color: var(--text-dim);
+            font-weight: 600;
+        }
+        .footer-link {
+            color: var(--electric-blue);
+            text-decoration: none;
+            margin-bottom: 20px;
+            display: inline-block;
+            font-size: 0.9rem;
+            transition: opacity 0.2s;
+
+            padding: 8px 20px;
+            border-radius: 50px;
+        }
+        .footer-link:hover {
+            background: rgba(56, 189, 248, 0.1);
+        }
+        .contact-info {
+            display: block;
+            margin-top: 15px;
+            font-size: 0.85rem;
+            opacity: 0.8;
+            letter-spacing: 0.5px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="tagline">Lean Startup Case Study</div>
+        <h1>Avocarrot Business Model Canvas</h1>
+        <p>Η στρατηγική δομή μετά το επιτυχημένο Pivot από B2C σε B2B</p>
+    </header>
+
+    <div class="pivot-banner">
+        <strong>💡 Το Lean Moment:</strong> Η Avocarrot συνειδητοποίησε ότι η "υπόθεση αξίας" δεν βρισκόταν στο rewards app, αλλά στο In-app Native Ad Serving. Το BMC που ακολουθεί αντανακλά το μοντέλο που οδήγησε στην εξαγορά των $20M.
+    </div>
+
+    <div class="bmc-wrapper">
+        <div class="bmc-grid">
+            <div class="bmc-box kp">
+                <h3>🤝 Key Partners</h3>
+                <ul>
+                    <li><strong>Ad Agencies:</strong> Πηγές διαφημιστικού budget.</li>
+                    <li><strong>SSP Platforms:</strong> Για αυτοματοποιημένη πώληση inventory.</li>
+                    <li><strong>Early Adopter Devs:</strong> Πρώτοι publishers που δοκίμασαν το SDK.</li>
+                </ul>
+            </div>
+
+            <div class="bmc-box ka">
+                <h3>⚙️ Key Activities</h3>
+                <ul>
+                    <li><strong>R&D:</strong> Συνεχής βελτίωση του Native SDK.</li>
+                    <li><strong>Algorithm Dev:</strong> Βελτιστοποίηση του CTR μέσω AI.</li>
+                    <li><strong>B2B Marketing:</strong> Παρουσία σε tech συνέδρια.</li>
+                </ul>
+            </div>
+
+            <div class="bmc-box kr">
+                <h3>💡 Key Resources</h3>
+                <ul>
+                    <li><strong>Ad-Tech IP:</strong> Η πατενταρισμένη τεχνολογία native ads.</li>
+                    <li><strong>Software Engineers:</strong> Εξειδίκευση σε mobile & big data.</li>
+                </ul>
+            </div>
+
+            <div class="bmc-box vp">
+                <h3>💎 Value Propositions</h3>
+                <ul>
+                    <li><strong>Για Publishers:</strong> Μονετοποίηση χωρίς "εκδιωγμό" των χρηστών.</li>
+                    <li><strong>Για Advertisers:</strong> Πρόσβαση σε premium, non-intrusive θέσεις.</li>
+                    <li><strong>Tech:</strong> Lightweight SDK που δεν βαραίνει το app.</li>
+                </ul>
+            </div>
+
+            <div class="bmc-box cr">
+                <h3>❤️ Customer Relationships</h3>
+                <ul>
+                    <li><strong>Developer Support:</strong> Άμεση βοήθεια στην ενσωμάτωση.</li>
+                    <li><strong>Dashboard:</strong> Self-service analytics για παρακολούθηση εσόδων.</li>
+                </ul>
+            </div>
+
+            <div class="bmc-box ch">
+                <h3>🚀 Channels</h3>
+                <ul>
+                    <li><strong>Direct Sales:</strong> Για μεγάλους οίκους εφαρμογών.</li>
+                    <li><strong>Github/Documentation:</strong> Για indie developers.</li>
+                </ul>
+            </div>
+
+            <div class="bmc-box cs">
+                <h3>👥 Customer Segments</h3>
+                <ul>
+                    <li><strong>App Developers:</strong> Που αναζητούν έσοδα (Supply).</li>
+                    <li><strong>Brand Advertisers:</strong> Που θέλουν ποιότητα (Demand).</li>
+                    <li><strong>Mobile Gaming Studios.</strong></li>
+                </ul>
+            </div>
+
+            <div class="bmc-box cost">
+                <h3>💰 Cost Structure</h3>
+                <ul>
+                    <li>Engineering Payroll (Κύριο κόστος).</li>
+                    <li>Cloud Infrastructure (AWS/Google Cloud).</li>
+                    <li>Sales & Marketing.</li>
+                </ul>
+            </div>
+
+            <div class="bmc-box rev">
+                <h3>💸 Revenue Streams</h3>
+                <ul>
+                    <li><strong>Transaction Fee:</strong> Ποσοστό (commission) επί κάθε πετυχημένης διαφήμισης που σερβίρεται.</li>
+                    <li><strong>Premium Data:</strong> Insights για τη συμπεριφορά χρηστών.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section style="background: white; padding: 30px; border-radius: 10px;">
+        <h2>Γιατί λειτούργησε αυτό το μοντέλο;</h2>
+        <p>
+            Το Business Model Canvas της Avocarrot πέτυχε γιατί κατάφερε να ευθυγραμμίσει τα κίνητρα τριών διαφορετικών πλευρών:
+        </p>
+        <ol>
+            <li><strong>Ο Χρήστης</strong> βλέπει διαφημίσεις που μοιάζουν με το περιεχόμενο (δεν ενοχλείται).</li>
+            <li><strong>Ο Developer</strong> βγάζει χρήματα χωρίς να χάνει χρήστες.</li>
+            <li><strong>Ο Διαφημιστής</strong> έχει πολύ υψηλότερο ROI.</li>
+        </ol>
+    </section>
+
+
+	<footer>
+            <div class="copyright">
+                &copy; 2026 Startup Lab | Zoe Marmara (<a href="mailto:zmarmara@econ.uoa.gr" style="color: inherit; text-decoration: none;">zmarmara@econ.uoa.gr</a>)
+            </div>
+        </footer>
+</div>
+
+</body>
+</html>
